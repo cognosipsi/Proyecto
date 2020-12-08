@@ -13,7 +13,10 @@
 int main (void) {
     int op;
     int op2;
-    HashMap *ProductMap = createMap(100);
+    HashMap *idMap = createMap(100);
+    HashMap *brandMap = createMap(100);
+    HashMap *typeMap = createMap(100);
+    import(idMap,typeMap,brandMap);
     printf("¿Desea ver un tutorial?\n");
     printf("1. Si\n");
     printf("2. No\n");
@@ -41,13 +44,13 @@ int main (void) {
               scanf("%d", &op);
 
               if (op == 1) {
-                  search_product(ProductMap);
+                  search_product(idMap);
               }
               if (op == 2) {
-                  search_type();
+                  search_type(typeMap);
               }
               if (op == 3) {
-                  search_brand();
+                  search_brand(brandMap);
               }
 
               printf("Seleccione el orden deseado:\n\n");

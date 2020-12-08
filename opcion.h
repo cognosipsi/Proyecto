@@ -11,13 +11,13 @@
 #include "hashmap.h"
 #include "treemap.h"
 
-void import(HashMap *);
+void import(HashMap *, HashMap *, HashMap *);
 
-void search_product();
+void search_product(HashMap *);
 
-void search_type();
+void search_type(HashMap *);
 
-void search_brand();
+void search_brand(HashMap *);
 
 void price_sort();
 
