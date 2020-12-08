@@ -11,6 +11,8 @@
 #include "hashmap.h"
 #include "treemap.h"
 
+void import(HashMap *);
+
 void search_product();
 
 void search_type();
