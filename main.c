@@ -13,6 +13,7 @@
 int main (void) {
     int op;
     int op2;
+    HashMap *ProductMap = createMap(100);
     printf("¿Desea ver un tutorial?\n");
     printf("1. Si\n");
     printf("2. No\n");
@@ -32,49 +33,56 @@ int main (void) {
         printf("7. Cerrar aplicacion");
         scanf("%d", &op);
         if (op == 1) {
-            printf("Seleccione una opción:\n\n");
-            printf("1. Buscar por producto\n");
-            printf("2. Buscar por tipo de producto\n");
-            printf("3. Buscar por marca\n");
-            printf("4. Agregar al carro\n");
-            scanf("%d", &op);
+          while (op2 != 2) {
+              printf("Seleccione una opción:\n\n");
+              printf("1. Buscar por producto\n");
+              printf("2. Buscar por tipo de producto\n");
+              printf("3. Buscar por marca\n");
+              scanf("%d", &op);
 
-            if (op == 1) {
-                search_product();
-            }
-            if (op == 2) {
-                search_type();
-            }
-            if (op == 3) {
-                search_brand();
-            }
+              if (op == 1) {
+                  search_product(ProductMap);
+              }
+              if (op == 2) {
+                  search_type();
+              }
+              if (op == 3) {
+                  search_brand();
+              }
 
-            printf("Seleccione el orden deseado:\n\n");
-            printf("1. Orden por precio\n");
-            printf("2. Orden por marca\n");
-            printf("3. Orden por tipo\n");
-            printf("4. Orden alfabético\n");
-            scanf("%d", &op2);
+              printf("Seleccione el orden deseado:\n\n");
+              printf("1. Orden por precio\n");
+              printf("2. Orden por marca\n");
+              printf("3. Orden por tipo\n");
+              printf("4. Orden alfabético\n");
+              scanf("%d", &op);
 
-            if (op2 == 1) {
-                price_sort();
-            }
-            if (op2 == 2) {
-                brand_sort();
-            }
-            if (op2 == 3) {
-                type_sort();
-            }
-            if (op2 == 4) {
-                az_sort();
-            }
+              if (op == 1) {
+                  price_sort();
+              }
+              if (op == 2) {
+                  brand_sort();
+              }
+              if (op == 3) {
+                  type_sort();
+              }
+              if (op == 4) {
+                  az_sort();
+              }
 
-            if (op == 4) {
-                push_cart();
-            }
+              printf("Escriba 1 si desea agregar algun producto al carro\n");
+              scanf("%d", &op);
+              if (op == 1) {
+                  push_cart();
+              }
+              printf("¿Desea seguir buscando?\n");
+              printf("1. Sí\n");
+              printf("2. No\n");
+              scanf("%d", &op2);
+          }
         }
         
-        if (op == 3) {
+        if (op == 2) {
             show_cart();
             printf("Escriba 1 si desea quitar del carro\n");
             scanf("%d", &op);
@@ -84,19 +92,19 @@ int main (void) {
             }
         }
         
-        if (op == 4) {
+        if (op == 3) {
             show_recom();
         }
         
-        if (op == 5) {
+        if (op == 4) {
             complete_purchase();
         }
         
-        if (op == 6) {
+        if (op == 5) {
             show_points();
         }
         
-        if (op == 7) {
+        if (op == 6) {
             printf("Seleccione una opción:\n\n");
             printf("1. Tutorial\n");
             printf("2. Preguntas frecuentes\n");
