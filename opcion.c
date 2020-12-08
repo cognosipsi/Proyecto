@@ -9,10 +9,10 @@
 #include "treemap.h"
 
 typedef struct{
-    char id[3];      // Código del producto
+    char id[10];      // Código del producto
     char name[60];   // Nombre del producto
     char brand[40];  // Marca del producto
-    int price;       // Precio del producto
+    char price[10];       // Precio del producto
     char type[40];   // Tipo del producto
     int stock;       // Cantidad de productos
 }product;            // Struct de productos
@@ -31,8 +31,8 @@ char *strdup(const char *str) {
 const char *get_csv_field (char * tmp, int k) {
     int open_mark = 0;
     char* ret=(char*) malloc (100*sizeof(char));
-    int ini_i=0, i=0;
-    int j=0;
+    int ini_i = 0, i = 0;
+    int j = 0;
     while(tmp[i+1]!='\0'){
         if(tmp[i]== '\"'){
             open_mark = 1-open_mark;
@@ -62,87 +62,105 @@ const char *get_csv_field (char * tmp, int k) {
 }
 
 void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
-    FILE *fp;
+    FILE *fp = fopen("catalogo.txt", "r");
     char linea[1024];
-    int i,j;
+    int i, j;
     product *info;
     const char *aux;
     char *tmp;
     List *ProductList;
     product *iterator;
-    fgets (linea, 1023, fp);
     while (fgets (linea, 1023, fp) != NULL) {
         info = (product*) malloc(sizeof(product));
-        for(i = 0 ; i < 6 ; i++) {
-            if (i == 0) {
-                strcpy(info->id, aux);
-            }
+        for(i = 0; i < 6 ; i++) {
             tmp = strdup(linea);
             aux = get_csv_field(tmp, i);
             free(tmp);
+            if (i == 0) {
+                strcpy(info-> id, aux);
+            }
             if (i == 1) {
-                strcpy(info->name, aux);
+                strcpy(info-> name, aux);
             }
             if (i == 2) {
-                strcpy(info->brand, aux);
+                strcpy(info-> brand, aux);
             }
             if (i == 3) {
-                info->price = atoi(aux);
+                strcpy(info-> price, aux);
+                //info->price = atoi(aux);
             }
             if (i == 4) {
-                strcpy(info->type, aux);
+                strcpy(info-> type, aux);
             }
             if (i == 5) {
-                info->stock=atoi(aux);
+                info->stock = atoi(aux);
             }
         }
-        
-        insertMap(idMap, info->id, info);                 // Se guarda en el mapa "id" la id desde info
-        if(searchMap(brandMap, info->brand)==NULL) {
+        insertMap(idMap, info->id, info);              
+        //printf("%s %s %s %s %s %d\n",info->id,info->name,info->brand,info->price,info->type,info->stock);
+        if(searchMap(brandMap, info-> brand) == NULL) {
             ProductList = create_list();
             push_back(ProductList, info);
             insertMap(brandMap, info->brand, ProductList);
         }
         else {
-            push_back(searchMap(brandMap, info->brand), info);
+          push_back(searchMap(brandMap, info->brand), info);
         }
-        if(searchMap(typeMap, info->type)==NULL) {
+        if(searchMap(typeMap, info-> type) == NULL) {
             ProductList = create_list();
             push_back(ProductList, info);
             insertMap(typeMap, info->type, ProductList);
         }
         else {
-            push_back(searchMap(typeMap, info->type), info);
+            push_back(searchMap(typeMap, info-> type), info);
         }
+        if(atoi(info-> id) == 550) break;
     }
-    iterator = firstMap(idMap);
-    while (iterator != NULL) {	
-        printf("%d ", (int)iterator->id);	
+    /*ProductList = create_list();
+    ProductList = firstMap(brandMap);
+    iterator = first(ProductList);
+    while (ProductList != NULL) {
+      iterator = first(ProductList);
+      while(iterator != NULL) {
+        printf("%s ", iterator->id);	
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
+        printf("%s ", iterator->price);	
         printf("%s ", iterator->type);
         printf("%d ", iterator->stock);	
         printf("\n");	
-        iterator = nextMap(idMap);	
-    }
+        iterator = next(ProductList);
+      }
+      ProductList =nextMap(brandMap);
+    }*/
 }
 
-void search_product(HashMap *idMap) {
+void search_product(HashMap *idMap, List *L) {
     char search[40];
-    int number=1;
+    int number = 1;
     product *iterator;
     printf("Ingrese la palabra a buscar (máximo 40 carácteres) :\n"); // Búsqueda por 
     scanf("%s", search);                                              // coincidencia
-    iterator=firstMap(idMap);
-    while(iterator!=NULL) {
-      if(strstr(search,iterator->name) || strstr(search,iterator->type) || strstr(search,iterator->brand)) {
-        
+    iterator = firstMap(idMap);
+    char *founded1;
+    char *founded2;
+    char *founded3;
+    bool exist = false;
+    while(iterator != NULL) {
+      founded1 = strstr(search, iterator-> name);
+      founded2 = strstr(search, iterator-> brand);
+      founded3 = strstr(search, iterator-> type);
+      if(founded1 != NULL || founded2 != NULL || founded3 != NULL) {
+        exist = true;
       }
+      if (exist){
+              printf(" %s %s %s ", iterator-> name, iterator->brand, iterator->type);
+      }
+      iterator=nextMap(idMap);
     }
 }
 
-void search_type(HashMap *typeMap) {
+void search_type(HashMap *typeMap, List *L) {
     /*
     int num;
     printf("Seleccione la categoría según número (Entre 1 y 8) :\n");
@@ -151,8 +169,8 @@ void search_type(HashMap *typeMap) {
     */
 }
 
-void search_brand(HashMap *brandMap) {
-  /*int num = 1;
+void search_brand(HashMap *brandMap, List *L) {
+  int num = 1,num2=1;
   product *iterator;
   List *L = create_list();
   L=firstMap(brandMap);
@@ -163,16 +181,21 @@ void search_brand(HashMap *brandMap) {
     L=nextMap(brandMap);
   }
   printf("Seleccione la marca que quiere\n");
-  scanf("%d ", &num);*/
+  scanf("%d ", &num);
+  L=firstMap(brandMap);
+  
+  
 }
 
-void price_sort() {}
+void price_sort(List *L, TreeMap *t) {
+    ;
+}
 
-void brand_sort() {}
+void brand_sort(List *L, TreeMap *t) {}
 
-void type_sort() {}
+void type_sort(List *L, TreeMap *t) {}
 
-void az_sort() {}
+void az_sort(List *L, TreeMap *t) {}
 
 void push_cart() {}
 

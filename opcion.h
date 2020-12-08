@@ -13,19 +13,19 @@
 
 void import(HashMap *, HashMap *, HashMap *);
 
-void search_product(HashMap *);
+void search_product(HashMap *, List *);
 
-void search_type(HashMap *);
+void search_type(HashMap *, List *L);
 
-void search_brand(HashMap *);
+void search_brand(HashMap *, List *L);
 
-void price_sort();
+void price_sort(List *, TreeMap *);
 
-void brand_sort();
+void brand_sort(List *, TreeMap *);
 
-void type_sort();
+void type_sort(List *, TreeMap *);
 
-void az_sort();
+void az_sort(List *, TreeMap *);
 
 void push_cart();
 

@@ -10,6 +10,25 @@
 
 //gcc -g main.c hashmap-answer.c list.c opcion.c treemap.c -o proyecto
 
+int lower_than_string(void* key1, void* key2){
+    char* k1=(char*) key1;
+    char* k2=(char*) key2;
+    if(strcmp(k1,k2)<0) return 1;
+    return 0;
+}
+
+int lower_than_int(void* key1, void* key2){
+    int k1 = *((int*) (key1));
+    int k2 = *((int*) (key2));
+    return k1<k2;
+}
+
+int higher_than_int(void* key1, void* key2){
+    int k1 = *((int*) (key1));
+    int k2 = *((int*) (key2));
+    return k1>k2;
+}
+
 int main (void) {
     int op;
     int op2;
@@ -17,6 +36,8 @@ int main (void) {
     HashMap *brandMap = createMap(100);
     HashMap *typeMap = createMap(100);
     import(idMap,typeMap,brandMap);
+    List *L = create_list();
+    TreeMap *tm = createTreeMap(lower_than_int);
     printf("¿Desea ver un tutorial?\n");
     printf("1. Si\n");
     printf("2. No\n");
@@ -44,13 +65,13 @@ int main (void) {
               scanf("%d", &op);
 
               if (op == 1) {
-                  search_product(idMap);
+                  search_product(idMap, L);
               }
               if (op == 2) {
-                  search_type(typeMap);
+                  search_type(typeMap, L);
               }
               if (op == 3) {
-                  search_brand(brandMap);
+                  search_brand(brandMap, L);
               }
 
               printf("Seleccione el orden deseado:\n\n");
@@ -61,18 +82,18 @@ int main (void) {
               scanf("%d", &op);
 
               if (op == 1) {
-                  price_sort();
+                  price_sort(L, tm);
               }
               if (op == 2) {
-                  brand_sort();
+                  brand_sort(L, tm);
               }
               if (op == 3) {
-                  type_sort();
+                  type_sort(L, tm);
               }
               if (op == 4) {
-                  az_sort();
+                  az_sort(L, tm);
               }
-
+              clear(L);
               printf("Escriba 1 si desea agregar algun producto al carro\n");
               scanf("%d", &op);
               if (op == 1) {

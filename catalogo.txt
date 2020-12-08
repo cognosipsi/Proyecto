@@ -1,0 +1,528 @@
+001/pan de molde blanco XL 752 gr/Ideal/$2150/Pan y pasteleria/50
+002/pan de molde multigrano 380 gr/Fuchs/$1550/Pan y pasteleria/50
+003/pan de molde perfecto 600 gr/Kingsbury/$1950/Pan y pasteleria/50
+004/galletas de maíz horneadas salmas 144 gr/Sanissimo/$1690/Pan y pasteleria/50
+005/pan molde blanco artesano 600 gr/Ideal/$2140/Pan y pasteleria/50
+006/pan de molde blanco 560 gr/Ideal/$1690/Pan y pasteleria/50
+007/pan de molde perfecto duo 600 gr/Kingsbury/$2180/Pan y pasteleria/50
+008/pan de molde linaza chia 380 gr/Fuchs/$1550/Pan y pasteleria/50
+009/tortillas burritos y wraps XL 350 gr/Pancho Villa/$1790/Pan y pasteleria/50
+010/pan de miga sándwich sin borde 460 gr/Castaño/$2280/Pan y pasteleria/50
+011/pan de hot dog 8 un. 415 gr/Ideal/$1580/Pan y pasteleria/50
+012/pan molde integral artesano 600 gr/Ideal/$2180/Pan y pasteleria/50
+013/pan de molde duo XL 760 gr/Castaño/$2090/Pan y pasteleria/50
+014/pan artesano de hamburguesa 720 gr/Ideal/$2440/Pan y pasteleria/50
+015/pre pizza a la piedra 2 un. 270 gr/Ideal/$2090/Pan y pasteleria/50
+016/pan de completo XL 6 un. 528 gr/Ideal/$1480/Pan y pasteleria/50
+017/pan de hot dog 8 un. 480 gr/Castaño/$1560/Pan y pasteleria/50
+018/pan de molde integral 630 gr/Castaño/$1990/Pan y pasteleria/50
+019/pan de molde calabaza y nuez 380 gr/Fuchs/$1610/Pan y pasteleria/50
+020/tortillas tacos y fajitas L 10 un. 320 gr/Pancho Villa/$1690/Pan y pasteleria/50
+021/tortillas integrales burrito XL 380 gr/Pancho Villa/$1890/Pan y pasteleria/50
+022/pan de molde integral 580 gr/Pan Pierre/$1540/Pan y pasteleria/50
+023/tortilla burrera XG 8 un. 400 gr/Tía Rosa/$1790/Pan y pasteleria/50
+024/pack tortillas tacos M 3 un. 200 gr/Pancho Villa/$2690/Pan y pasteleria/50
+025/pan pita integral 8 un. 344 gr/Ideal/$1249/Pan y pasteleria/50
+026/pan pita multigrano 8 un. 300 gr/Castaño/$1290/Pan y pasteleria/50
+027/pan de molde centeno Schwarzbrot 750 gr/Vollkorn/$2740/Pan y pasteleria/50
+028/pan de molde integral trigo 650 gr/StuttgartFuchs/$1890/Pan y pasteleria/50
+029/pan de molde blanco grande 1 kg/Jumbo Artesanal/$1980/Pan y pasteleria/50
+030/pan de molde light multigrano 650 gr/Fuchs/$2180/Pan y pasteleria/50
+031/pan rallado 250 gr/Castaño/$1040/Pan y pasteleria/50
+032/pan de hamburguesa 8 unid./Castaño/$1610/Pan y pasteleria/50
+033/tapas pascualinas 400 gr/Cuisine & Co/$2290/Pan y pasteleria/50
+034/quesadillas 8 unid./Pancho Villa/$1090/Pan y pasteleria/50
+035/pan pita Dúo 300 gr/Castaño/$1080/Pan y pasteleria/50
+036/pan para hot dog 342 gr/Kings Hawaiian/$2760/Pan y pasteleria/50
+037/pan molde familiar duo Castaño 585 gr/Castaño/$1690/Pan y pasteleria/50
+038/pan molde multigrano Castaño 600 gr/Castaño/$1640/Pan y pasteleria/50
+039/pan mini barra integral 20 un./Bredenmaster/$2740/Pan y pasteleria/50
+040/pan marraqueta tradicional 10 un./Bredenmaster/$2740/Pan y pasteleria/50
+041/pan amasado de campo mini 30 un./Bredenmaster/$3140/Pan y pasteleria/50
+042/pan de pascua frutos secos 700 gr/Cuisine & Co/$3490/Pan y pasteleria/50
+043/magdalenas pulmahue sabor vainilla 6 un./Pulmahue/$1390/Pan y pasteleria/50
+044/brownie nutra bien pack 4 unid, sin azúcar/Nutra Bien/$2190/Pan y pasteleria/50
+045/queque brownie pack 4 unid,/Nutra Bien/$2090/Pan y pasteleria/50
+046/pan de pascua con stevia 500 gr/Cuisine & Co/$3190/Pan y pasteleria/50
+047/pan de pascua con fruta confitada 700 gr/Cuisine & Co/$3190/Pan y pasteleria/50
+048/queque brownie Nutra Bien sin azúcar 250 gr/Nutra Bien/$1690/Pan y pasteleria/50
+049/pan de pascua premium frutos secos 800 gr/Castaño/$5490/Pan y pasteleria/50
+050/torta panqueque naranja 15 porciones/Nopaluch/$12990/Pan y pasteleria/50
+051/pan de pascua con frutos secos 700 gr/Castaño/$3690/Pan y pasteleria/50
+052/torta san jorge tradicional 15 porciones/Nopaluch/$9990/Pan y pasteleria/50
+053/pack medialunas dulces 5 un/Nopaluch/$1290/Pan y pasteleria/50
+054/queso mantecoso laminado 500 gr/Quilque/$4690/Fiambreria/50
+055/queso chacra 400 gr/Quillayes/$1639/Fiambreria/50
+056/jamon pierna artesanal 125 gr/Receta Del Abuelo/$1699/Fiambreria/50
+057/queso parmesano rallado 40 gr/Colun/$799/Fiambreria/50
+058/queso mantecoso laminado 500 gr/Rio Bueno/$4799/Fiambreria/50
+059/jamon pierna la preferida 200 gr/La Preferida/$2000/Fiambreria/50
+060/queso crema pasteurizado 226 gr/Cuisine & Co/$1890/Fiambreria/50
+061/jamon de pavo ahumado 150 gr/La Crianza/$2099/Fiambreria/50
+062/queso parmesano rallado 80 gr/Cuisine & Co/$1399/Fiambreria/50
+063/salame 100 gr/La Preferida/$1999/Fiambreria/50
+064/jamon pierna 200 gr/Receta Del Abuelo/$2490/Fiambreria/50
+065/salame italiano 100 gr/PF/$1799/Fiambreria/50
+066/queso parmesano rallado 40 gr/Quillayes/$799/Fiambreria/50
+067/queso crema 210 gr/Philadelphia/$2639/Fiambreria/50
+068/pechuga de pavo cocida/Receta del Abuelo/$1990/Fiambreria/50
+069/jamon/Receta Del Abuelo/$1749/Fiambreria/50
+070/vienesas sin piel 7 Unid. 380 gr/La Preferida/$2549/Fiambreria/50
+071/tocino cortado 180 gr/La Preferida/$2849/Fiambreria/50
+072/queso reggianito rallado 40 gr/Colun/$849/Fiambreria/50
+073/queso mantecoso laminado 350 gr/Las Parcelas De Valdivia/$3949/Fiambreria/50
+074/queso mantecoso laminado 250 gr/Quilque/$2549/Fiambreria/50
+075/pechuga cocida de pavo Sopraval 250 gr/Sopraval/$2999/Fiambreria/50
+076/jamon de pavo ahumado Sopraval granel 100 gr/Sopraval/$940/Fiambreria/50
+077/jamon pierna Llanquihue 200 gr/Llanquihue/$2549/Fiambreria/50
+078/queso gauda laminado 500 gr/Soprole/$4399/Fiambreria/50
+079/quesillo light 320 gr/Colun/$1759/Fiambreria/50
+080/queso camembert 100 gr/Quillayes/$1999/Fiambreria/50
+081/jamon cocido de pavo 100 gr/La Preferida/$800/Fiambreria/50
+082/jamon acaramelado de pavo 100 gr/La Preferida/$800/Fiambreria/50
+083/queso mantecoso laminado 500 gr/Las Parcelas De Valdivia/$5099/Fiambreria/50
+084/queso crema 226 gr/Greenbay/$2099/Fiambreria/50
+085/salchichas premium 750 gr/Receta Del Abuelo/$4999/Fiambreria/50
+086/jamon pierna artesanal 200 gr/Receta Del Abuelo/$2590/Fiambreria/50
+087/queso mantecoso trozo 500 gr/Huentelauquen/$6099/Fiambreria/50
+088/longanicilla de campo La Crianza 420 gr/La Crianza/$3999/Fiambreria/50
+089/queso mozzarella granulado 200 gr/Quillayes/$2299/Fiambreria/50
+090/queso fresco 450 gr/Colun/$2149/Fiambreria/50
+091/queso chanco laminado 250 gr/Quillayes/$2649/Fiambreria/50
+092/queso mozzarella laminado 250 gr/Quillayes/$2349/Fiambreria/50
+093/queso gruyere 200 gr/Santa Rosa/$3769/Fiambreria/50
+094/queso azul trozo 100 gr/Quillayes/$2999/Fiambreria/50
+095/queso mantecoso trozo 500 gr/Matthei/$4799/Fiambreria/50
+096/quesillo sin lactosa 300 gr/Quillayes/$1729/Fiambreria/50
+097/salchichas premium 5 un. 250 gr/Receta Del Abuelo/$1699/Fiambreria/50
+098/salchichas de pavo 5 un. 250 gr/PF/$899/Fiambreria/50
+099/salchicha tradicional 500 gr/Llanquihue/$4649/Fiambreria/50
+100/salchichas 5 un. 250 gr/Llanquihue/$2429/Fiambreria/50
+101/salchichas tradicional Llanquihue 1 kg/Llanquihue/$8849/Fiambreria/50
+102/vienesas La Preferida sin piel 14 Unid. 760 gr/La Preferida/$4999/Fiambreria/50
+103/salame llanquihue 125 gr/Llanquihue/$2689/Fiambreria/50
+104/salame llanquihue 200 gr/Llanquihue/$3549/Fiambreria/50
+105/longaniza patagonica La Crianza 250 gr/La Crianza/$2599/Fiambreria/50
+106/longaniza san Jorge 1 kg/San Jorge/$3999/Fiambreria/50
+107/longaniza 2 un. 250 gr/Llanquihue/$2699/Fiambreria/50
+108/chorizo patagonico La Crianza 420 gr/La Crianza/$3899/Fiambreria/50
+109/chorizo parrillero 500 gr/Receta Del Abuelo/$3899/Fiambreria/50
+110/helado chocolate frambuesa 8 un. 55 ml c\u/Guallarauco/$4199/congelados/50
+111/helado piña cassata 1 L/Savory/$2549/congelados/50
+112/helado chirimoya alegre cassata 1 L/Savory/$2549/congelados/50
+113/helado chocolate suizo cassata 1 L/Savory/$2549/congelados/50
+114/helado Danky mini nogatonga 5 un. 80 ml c\u/Savory/$4159/congelados/50
+115/helado chocolate suizo cassata 1 L/Savory/$2549/congelados/50
+116/helado vainilla 1.42 L 1 unid /Turkey Hill/$4799/congelados/50
+117/helado chocolate belga premium 1 L/San Francisco De Loncomilla/$6299/congelados/50
+118/helado mini frambuesa 5 un. 60 ml c\u/Mega/$4159/congelados/50
+119/helado paleta mini 5 un. 60 ml c\u/Sahne Nuss/$4159/congelados/50
+120/helado lucuma cassata 1 L/Savory/$2549/congelados/50
+121/helado tres leches cassata 1 L/Savory/$2549/congelados/50
+122/helado tres leches 1 L/San Francisco De Loncomilla/$4799/congelados/50
+123/helado suspiro limeño 1 L/San Francisco De Loncomilla/$4799/congelados/50
+124/helado de agua de frambuesa 1 L/San Francisco De Loncomilla/$4799/congelados/50
+125/helado vainilla 1.89 L/Bresler/$4099/congelados/50
+126/porotos verdes congelados 350 g/Cuisine & Co/$999/congelados/50
+127/choclo en grano congelado 500 gr/Cuisine & Co/$1250/congelados/50
+128/pechuga deshuesada de pollo 800 gr/Cuisine&Co/$4150/carne/50
+129/filetillo de pollo 800 gr/Cuisine&Co/$4550/carne/50
+130/filetitos de pollo/Super Pollo 830 gr/$3590/carne/50
+131/pechuga deshuesada 850 gr/Super Pollo/$3590/carne/50
+132/truto corto pollo 1000 gr/Super Pollo/$2590/carne/50
+133/carne molida truto pavo 400 gr/Ariztia/$3190/carne/50
+134/pechuga deshuesada de pollo sin piel/Ariztia/$3590/carne/50
+135/reineta sin piel 500 gr/Cuisine&Co/$5490/carne/50
+136/merluza filete con piel 500 gr/Cuisine&Co/$3790/carne/50
+137/milanesa de merluza apanada 500 gr/Cuisine&Co/$3990/carne/50
+138/carpaccio de salmon 100 gr/Cuisine&Co/$3890/carne/50
+139/kanikama congelado 300 gr/Cuisine&Co/$1590/carne/50
+140/coctelitos de merluza congelados apanados 500 gr/El Golfo/$3690/carne/50
+141/choritos sin concha 300 gr/Cuisine&Co/$1690/carne/50
+142/salmon filete 500 gr/Cuisine&Co/$5890/carne/50
+143/salmon apanado nuggets 400 gr/Supe Salmon/$3990/carne/50
+144/dinodorados de merluza congelados 440 gr/El Golfo/$3290/carne/50
+145/hamburguesa de salmon 100 gr/Super Salmon/$1020/carne/50
+146/anillos de calamar 300 gr/Productos del mar Romero/$3290/carne/50
+147/paila marina congelada 200 gr/Productos del mar Romero/$2590/carne/50
+148/merluza tempura 500 gr/El Golfo/$4190/carne/50
+149/plateada con salsa 240 gr/Cuk/$5260/carne/50
+150/filete premium al vacio 2400 gr/Pampa Verde/$45570/carne/50
+151/lomo liso premium 1500 gr/Camposorno/$25480/carne/50
+152/bistec de posta paleta 300 gr/Camposorno/$3350/carne/50
+153/plateada de lomo 1000 gr/Super Cerdo/$7290/carne/50
+154/plateada a la chilena cerdo 1000 gr/Super Cerdo/$6590/carne/50
+155/lomo liso premium al vacio 1300 gr/Pampa Verde/$22080/carne/50
+156/osobuco congelado 1000 gr/Pampa Verde/$6790/carne/50
+157/lomo centro de cerdo 800 gr/Super Cerdo/$6490/carne/50
+158/lomo liso de wagyu premium 1000 gr/Mollendo/$32990/carne/50
+159/flat meat tapabarriga centro premium 1700 gr/Camposorno/$20380/carne/50
+160/asado de tira premium 2300 gr/Camposorno/$32170/carne/50
+161/abastero al vacio 1700 gr/Mollendo/$11030/carne/50
+162/posta paleta organica al vacio 1000 gr/Viva/$9990/carne/50
+163/posta negra al vacio 1600 gr/Viva/$11120/carne/50
+164/filete de merluza 500 gr/El Golfo/$4290/carne/50
+165/posta rosada organica al vacio 1000 gr/Viva/$10490/carne/50
+166/costillas de cerdo baby back ribs 1000 gr/Super Cerdo/$7790/carne/50
+167/chuletitas para freir 600 gr/Super Cerdo/$4490/carne/50
+168/palanca al vacio 1200 gr/Pampa Verde/$12460/carne/50
+169/lomo centro medallon 800 gr/Super Cerdo/$6490/carne/50
+170/platano granel 500 gr/Frutas y Verduras Propias/$540/frutas y verduras/50
+171/champiñones 200 gr/Frutas y Verduras Propias/$1190/frutas y verduras/50
+172/limon malla 1000 gr/Frutas y Verduras Propias/$1290/frutas y verduras/50
+173/tomate granel 500 gr/Frutas y Verduras Propias/$740/frutas y verduras/50
+174/brocoli unidad/Frutas y Verduras Propias/$1139/frutas y verduras/50
+175/pera packam granel 500 gr/Frutas y Verduras Propias/$940/frutas y verduras/50
+176/manzana fuji granel 500 gr/Frutas y Verduras Propias/$990/frutas y verduras/50
+177/lechuga española unidad/Frutas y Verduras Propias/$730/frutas y verduras/50
+178/zapallo italiano unidad/Frutas y Verduras Propias/$630/frutas y verduras/50
+179/zanahoria bolsa 1000 gr/Frutas y Verduras Propias/$890/frutas y verduras/50
+180/tomate larga vida malla 1000 gr/Frutas y Verduras Propias/$1490/frutas y verduras/50
+181/pimiento verde unidad/Nopaluch/$750/frutas y verduras/50
+182/pimiento rojo unidad/Nopaluch/$1390/frutas y verduras/50
+183/pepino ensalada unidad/Nopaluch/$690/frutas y verduras/50
+184/kiwi exportacion grane 500 grl/Nopaluch/$1640/frutas y verduras/50
+185/piña unidad/Nopaluch/$1790/frutas y verduras/50
+186/arandotes pote 125 gr/Nopaluch/$2190/frutas y verduras/50
+187/lechuga española hidroponica unidad/Nopaluch/$1190/frutas y verduras/50
+188/zapallo camota unidad/Nopaluch/$1590/frutas y verduras/50
+189/tomate romanita 340 gr/Nopaluch/$2290/frutas y verduras/50
+190/perejil unidad/Nopaluch/$550/frutas y verduras/50
+191/limon granel 500 gr/Nopaluch/$690/frutas y verduras/50
+192/lechuga escarola 2 unidad/Nopaluch/$1490/frutas y verduras/50
+193/espinaca 500 gr/Nopaluch/$990/frutas y verduras/50
+194/cebolla malla 1000 gr/Nopaluch/$990/frutas y verduras/50
+195/brotes de alfalfa 70 gr/Agrosano/$690/frutas y verduras/50
+196/brotes de rabanito 70 gr/Agrosano/$690/frutas y verduras/50
+197/acelga 500 gr/Agrosano/$890/frutas y verduras/50
+198/brote brocoli unidad/Agrosano/$890/frutas y verduras/50
+199/berro baby 60 gr/Agrosano/$1490/frutas y verduras/50
+200/espinacas 200 gr/Agrosano/$1590/frutas y verduras/50
+201/diente de dragon 1000 gr/Agrosano/$1750/frutas y verduras/50
+202/mezcla wok base 300 gr/Agrosano/$1820/frutas y verduras/50
+203/limon jugo malla 1000 gr/Sofruco/$1490/frutas y verduras/50
+204/naranja jugo malla 3000 gr/Sofruco/$5390/frutas y verduras/50
+205/ciruelas deshidratadas 500 gr/Sofruco/$3290/frutas y verduras/50
+206/well mix coquito 150 gr/Sofruco/$2590/frutas y verduras/50
+207/well mix saludable 100 gr/Sofruco/$2690/frutas y verduras/50
+208/well mix semillas de zapallo 100 gr/Sofruco/$2690/frutas y verduras/50
+209/ciruelas deshidratadas sin carozo 200 gr/Sofruco/$1750/frutas y verduras/50
+210/agua bidon 6.5 lt/Benidictino/$1620/botilleria/50
+211/agua manzana sin gas 1.6 lt/Mas/$1000/botilleria/50
+212/bebida sprite 1.5 lt/Sprite/$1560/botilleria/50
+213/bebida coca cola sin azucar 1.5 lt/Coca Cola/$1560/botilleria/50
+214/bebida coca cola light 3 lt/Coca Cola/$2290/botilleria/50
+215/bebida canada dry ginger ale zero 1.5 lt/Canada Dry/$1500/botilleria/50
+216/pack bebida coca cola zero 6 unidad 0.350 lt c\u/Coca Cola/$3790/botilleria/50
+217/jugo fresco naranja 1.75 lt/Watt’s/$3690/botilleria/50
+218/bebida pepsi 1.5 lt/Pepsi/$1500/botilleria/50
+219/agua pera sin gas 1.6 lt/Mas/$1000/botilleria/50
+220/agua granada sin gas 1.6 lt/Mas/$1000/botilleria/50
+221/pack bebida coca cola light 4 unidad 1.5 lt c\u/Coca Cola/$4990/botilleria/50
+222/nectar naranja light 1.5 lt/Watt’s/$1180/botilleria/50
+223/jugo piña sobre 7 gr/Livean/$150/botilleria/50
+224/jugo pera de agua sobre 7 gr/Livean/$150/botilleria/50
+225/jugo papaya sobre 7 gr/Livean/$150/botilleria/50
+226/jugo naranja sobre 7 gr/Livean/$150/botilleria/50
+227/jugo maracuya sobre 7 gr/Livean/$150/botilleria/50
+228/jugo manzana verde sobre 7 gr/Livean/$150/botilleria/50
+229/jugo mango verde sobre 7 gr/Livean/$150/botilleria/50
+230/jugo frutilla verde sobre 7 gr/Livean/$150/botilleria/50
+231/jugo berries verde sobre 7 gr/Livean/$150/botilleria/50
+232/bebida crush light 1.5 lt/Crush/$1500/botilleria/50
+233/bebida coca light 1.5 lt/Coca Cola Light/$1560/botilleria/50
+234/bebida canada dry ginger ale light 1.5 lt/Canada Dry/$1500/botilleria/50
+235/agua purificada sin gas pure life 6 lt/Nestle/$1520/botilleria/50
+236/agua mineral con gas 1.6 lt/Cachantun/$690/botilleria/50
+237/agua purificada con gas 1.5 lt/Benedictino/$710/botilleria/50
+238/jugo naranja sin azucar 1 lt/Guallarauco/$1350/botilleria/50
+239/jugo mango sin azucar 1 lt/Guallarauco/$1350/botilleria/50
+240/agua saborizada piña 1.6 lt/Mas/$1000/botilleria/50
+241/agua saborizada limonada jengibre 1.5 lt/Benedictino/$860/botilleria/50
+242/agua saborizada de pera 1.5 lt/Benedicto/$860/botilleria/50
+243/agua saborizada de manza 1.5 lt/Benedictino/$860/botilleria/50
+244/jugo en polvo naranja zanahoria 7 gr/Vivo/$220/botilleria/50
+245/agua purificada 6 lt/Cuisine&Co/$1250/botilleria/50
+246/jugo exprimido naranja 1.75 lt/Watt’s/$4690/botilleria/50
+247/jugo fresco naranja 1.5 lt/Quillayes/$3990/botilleria/50
+248/pack bebida coca cola zero 6 unidad 0.220 lt/Coca Cola/$2550/botilleria/50
+249/agua saborizada manzana 1.6 lt/Mas/$1000/botilleria/50
+250/pack bebida coca cola light 6 unidad 0.350 lt/Coca Cola/$3790/botilleria/50
+251/pack nectar manzana 6 unidad 0.200 lt/Livean/$1820/botilleria/50
+252/agua tonica zero 1.5 lt/Canada Dry/$1500/botilleria/50
+253/jugo en polvo naranja frutilla 7 gr/Vivo/$220/botilleria/50
+254/jugo en polvo frutos rojos 8 gr/Vivo/$220/botilleria/50
+255/agua saborizada uva sin gas 1.6 lt/Mas/$1000/botilleria/50
+256/bebida limon soda light 1.5 lt/Limon Soda/$1500/botilleria/50
+257/bebida inca kola 1.5 lt/Inca Kola/$1560/botilleria/50
+258/espumante brut 12.5° 0.750 lt/Viñamar/$4990/botilleria/50
+259/espumante brut 0.750 lt/Undurraga/$3990/botilleria/50
+260/carmenere viña indomita 0.750 lt/Indomita/$3390/botilleria/50
+261/vino gran reserva 0.750 lt/Indomita/$6790/botilleria/50
+262/vino misiones de rengo varietal 0.750 lt/Misiones de Rengo/$2690/botilleria/50
+263/vino blanco 2 lt/Santa Helena/$2980/botilleria/50
+264/vino viña san pedro gato blanco 0.500 lt/Gato/$1150/botilleria/50
+265/vino blanco 1 lt/Gato/$2190/botilleria/50
+266/vino adobe organico merlot 0.750 lt/Emiliana/$5490/botilleria/50
+267/vino clos de pirque moscatel tetra 2 lt/Concha y Toro/$3290/botilleria/50
+268/vino casillero del diablo chardonnay 0.750 lt/Concha y Toro/$4690/botilleria/50
+269/sidra 0.750 lt/Rama Caida/$3190/botilleria/50
+270/vino cabernet sauvignon 11.5° 1.5 lt/Gato/$2290/botilleria/50
+271/late harvest viña santa rita 0.500 lt/Santa Rita/$3390/botilleria/50
+272/vino frontera carmenere 0.750 lt/Concha y Toro/$2490/botilleria/50
+273/vino tinto 2 lt/Santa Helena/$2650/botilleria/50
+274/pack 24 unidad cerveza golden lager 0.330 lt c\u/Cusqueña/$16990/botilleria/50
+275/pack 12 unidad cerveza corona 0.330 lt c\u/Corona/$9990/botilleria/50
+276/pack 12 unidad cerveza calafate 0.330 lt c\u/Austral/$10990/botilleria/50
+277/pack 24 unidad cerveza lager 5° 0.355 lt c\u/Royal Guard/$15790/botilleria/50
+278/pack 6 unidad cerveza torobayo 0.330 lt c\u/Kunstmann/$5990/botilleria/50
+279/pack 6 unidad cerveza limon lata 0.350 lt c\u/Stones/$4710/botilleria/50
+280/cerveza red citrus 0.350 lt/Stones/$770/botilleria/50
+281/pack 6 cerveza 4.5° lata 0.473 lt c\u/Becker/$4290/botilleria/50
+282/cerveza maqui botella 0.330 lt/Dolbek/$1690/botilleria/50
+283/pack 4 unidad cerveza IPA botella 0.330 lt c\u/Kunstmann/$6890/botilleria/50
+284/pisco alto del carmen 35° 1 lt/Alto del Carmen/$7790/botilleria/50
+285/gin bombay saphire 47° 0.750 lt/Bombay Saphire/$11790/botilleria/50
+286/vodka stolichnaya 1 lt/Stolichnaya/$7890/botilleria/50
+287/pisco mistral 35° 0.750 lt/Mistral/$6890/botilleria/50
+288/pisco mal paso pedro jimenez 0.750 lt/Mal Paso/$8650/botilleria/50
+289/whisky the macallan 12 años 0.700 lt/Macallan/$49000/botilleria/50
+290/pack pisco ice 4 unidad 0.275 lt/Mistral/$3990/botilleria/50
+291/whisky 40° 1 lt/Sandy Mac/$8990/botilleria/50
+292/whisky cinnamon 0.750 lt/Fireball/$11990/botilleria/50
+293/absolut 40° 0.750 lt/Absolut/$8990/botilleria/50
+294/vodka 37.5° 1 lt/Eristoff/$4690/botilleria/50
+295/vodka grey goose 0.750 lt/Grey Goose/$29990/botilleria/50
+296/whisky white horse 0.750 lt/White Horse/$6990/botilleria/50
+297/pisco la serena 35° 0.700 lt/La Serena/$3450/botilleria/50
+298/pisco campanario 1 lt 40° blanco/Campanario/$3990/botilleria/50
+299/pisco diablo 0.700 lt/Concha Y Toro/$6990/botilleria/50
+300/whisky buchanans deluxe 0.750 lt/Buchan’s/$34990/botilleria/50
+301/artesanos del cochiguaz 35° 0.700 lt/Artesanos del Chochiguaz/$3670/botilleria/50
+302/ron havana club añejo especial 40° 1 lt/Havana Club/$9790/botilleria/50
+303/pisco la serena 35° 0.700 lt/La Serena/$3450/botilleria/50
+304/pack ron mojito ice berries 4 unidad 0.275 lt/Sierra Morena/$4290/botilleria/50
+305/pisco tres erres 35° 0.700 lt/Tres Erres/$4790/botilleria/50
+306/ron cacique 0.700 lt extra añejo 40°/Cacique/$9990/botilleria/50
+307/whisky 12 años botella 40° 1 lt/Chivas Regal/$34250/botilleria/50
+308/whisky jack daniel’s 40° 0.750 lt/Jack Daniel’s/$23850/botilleria/50
+309/pisco campanario 0.700 lt 35°/Campanario/$3950/botilleria/50
+310/ron bacardi dorado 40° 0.750 lt/Bacardi/$7690/botilleria/50
+311/ron flor de caña 1 lt/Flor De Caña/$8190/botilleria/50
+312/coctel campanario maracuya 0.700 lt/Campanario/$3990/botilleria/50
+313/gin 40° 1 lt/Boolton/$6790/botilleria/50
+314/aperol 11° 0.750 lt/Aperol/$8990/botilleria/50
+315/aguardiente 50° 0.900 lt/Chillan/$5590/botilleria/50
+316/coctel aperitivo ramazzotti 0.700 lt/Ramazzotti/$10890/botilleria/50
+317/sour limon sutil 1 lt/La Pizka/$9790/botilleria/50
+318/crema irlandesa baileys 0.750 lt 17°/Baileys/$12890/botilleria/50
+319/pisco sour campanario 0.700 lt/Campanario/$3890/botilleria/50
+320/coñac 38° 0.750 lt/Tres Palos/$4190/botilleria/50
+321/piña colada 12° botella 0.700 lt/Campanario/$4290/botilleria/50
+322/chambord 0.750 lt/Stolichnaya/$13990/botilleria/50
+323/licor de cacao 20° 0.750 lt/Mitjans/$4650/botilleria/50
+324/licor de menta duval 28° 0.950 lt/Duval/$4290/botilleria/50
+325/licor amarula 0.750 lt/Amarula/$12990/botilleria/50
+326/licor doñihue 0.900 lt/Doñihue/$3290/botilleria/50
+327/coñac 38° 1 lt/Tres Palos/$5490/botilleria/50
+328/jarabe goma mel zero/Mel/$4550/botilleria/50
+329/oporto 16° 0.750 lt/Diamante/$7590/botilleria/50
+330/licor de amaretto 20° 0.750 lt/Mitjans/$6190/botilleria/50
+331/campanario maqui 14° botella 0.700 lt/Campanario/$3990/botilleria/50
+332/licor hierbas 12 unidad/Underberg/$15790/botilleria/50
+333/higienix alcohol toallitas 100 unids/Difem Pharma/$1990/farmacia y cuidado personal/50
+334/coctel capel piña colada 12° 0.700 lt/Capel/$4490/botilleria/50
+335/licor lorch 0.500 lt sabor frambuesa/Loerch/$5290/botilleria/50
+336/artesanos del cochiguaz mango sour 12° 1 lt/Artesanos Del Cochiguaz/$4690/botilleria/50
+337/licor chocolate botella 0.700 lt/Tres Plumas/$4890/botilleria/50
+338/amargo aromatico 44.7° 0.155 lt/Rossard/$8190/botilleria/50
+339/licor de anis 33° 0.750 lt/Anis Del Mono/$3290/botilleria/50
+340/sour sol de cuba berries 12° 0.700 lt/Sol/$4550/botilleria/50
+341/jerez 16° 0.750 lt/Zalamero/$7590/botilleria/50
+342/cachasa velho barreiro 1 lt/Velho Barreiro/$5490/botilleria/50
+343/vodka black 18° 1 lt/Eristoff/$5490/botilleria/50
+344/vodka gold 20° 0.700 lt/Eristoff/$4490/botilleria/50
+345/vodka eristoff original 37.5° 0.700 lt/Eristoff/$4490/botilleria/50
+346/papel aluminio profesional 30 m/Alufoil/$2990/hogar/50
+347/pilas duracell AA 16 unidad/Duracell/$9990/hogar/50
+348/cloro en tableta para piscina 1000 gr/Aguacol/$4490/hogar/50
+349/destape cañerias 1 lt/Aguacol/$3090/hogar/50
+350/rociador capacidad 1 lt/Nopaluch/$2290/hogar/50
+351/molde queque silicona/Krea/$3990/hogar/50
+352/insecticida casa y jardin 0.360 lt/Raid/$3490/hogar/50
+353/jarra basica 1.3 lt/Krea/$1490/hogar/50
+354/toalla visita 30x45 cm/Krea/$1490/hogar/50
+355/jarro con tapa 1 lt/Krea/$1690/hogar/50
+356/set 3 colgadores terciopelo gancho/Krea/$990/hogar/50
+357/jarra medidora de plastico/Krea/$1490/hogar/50
+358/set 6 vasos whisky 0.325 lt/Cristar/$4690/hogar/50
+359/sarten antiadherente 20 cm/Ilko/$4290/hogar/50
+360/film plastico rollo 20 m/Nopaluch/$1090/hogar/50
+361/karro 2.2 lt/Krea/$9990/hogar/50
+362/dispensador ceramica rombos/Krea/$3990/hogar/50
+363/linterna manos libres energizer 60 lumens/Energizer/$5990/hogar/50
+364/canasto weno redondo 40 lt/Wenco/$3590/hogar/50
+365/cinta de enmascarar tesa 40m x48mm/Tesa/$2490/hogar/50
+366/moldes para queques clasico bandeja 6 unidades/Ilko/$7990/hogar/50
+367/tetera de acero 0.9 lt/Krea/$4990/hogar/50
+368/plato hondo diwali negro 20 cm/Luminarc/$2390/hogar/50
+369/plato bajo diwali negro 25 cm/Luminarc/$2390/hogar/50
+370/cuchillo premium/Wayu/$4990/hogar/50
+371/colador kendy chico/Kendy/$1790/hogar/50
+372/asador 40 cm/Foodies/$42999/hogar/50
+373/wok 28x7.2cm/Foodies/$31990/hogar/50
+374/wok 28.5.5cm/Foodies/$29990/hogar/50
+375/sarten 24x5cm/Foodies/$24990/hogar/50
+376/sarten 20x4.2cm/Foodies/$19990/hogar/50
+377/sarten 16cm/Foodies/$17190/hogar/50
+378/cacerola alta 28x16cm/Foddies/$42990/hogar/50
+379/tabla cortar vintage/Marvel/$6990/hogar/50
+380/cuchillo blister vintage/Marvel/$4990/hogar/50
+381/set 3 vasos vintage/Marvel/$4990/hogar/50
+382/schopero frozen vintage/Marvel/$4990/hogar/50
+383/tazon latte vintage/Marvel/$3990/hogar/50
+384/infusor pinza redondo/Krea/$3990/hogar/50
+385/cubrecama bucle 1.5 plaza arena/Krea/$15990/hogar/50
+386/insecticida araña 0.450 lt/Baygon/$2250/hogar/50
+387/toalla de playa doble faz hippie/Krea/$10090/hogar/50
+388/cucharon con apoyo/Krea/$1990/hogar/50
+389/espatula acero mango de madera/Wayu/$6990/hogar/50
+390/copon labrado textura/Krea/$9990/hogar/50
+391/salero o pimentero/Wayu/$5490/hogar/50
+392/set cucharas para ensalada 2 unidades/Wayu/$7690/hogar/50
+393/sopero de porcelana unidad/Krea/$2990/hogar/50
+394/copon redondo 20.5x30cm/Krea/$9990/hogar/50
+395/cuchillo multiuso mango negro/Krea/$4990/hogar/50
+396/funda traje transparente 60x135cm/Krea/$2490/hogar/50
+397/botella value/Krea/$1990/hogar/50
+398/tabla aperitivo/Wayu/$13990/hogar/50
+399/set de basta lupe/Lupe/$1090/hogar/50
+400/agujas para tela y lana lune/Lupe/$890/hogar/50
+401/alfiler gancho lupe colores/Lupe/$1090/hogar/50
+402/plato redondo opal 26 cm/Krea/$1290/hogar/50
+403/cuadro surtido/Krea/$12990/hogar/50
+404/bowl ceramico s diseño/Krea/$2990/hogar/50
+405/ensaladera redonda melanina gitana/Krea/$3990/hogar/50
+406/fuente rectangular melanina gitana/Krea/$3990/hogar/50
+407/fuente rectangular gitana/Krea/$12990/hogar/50
+408/fuente cuadrada s gitana/Krea/$4990/hogar/50
+409/fuente cuadrada m gitana/Krea/$5990/hogar/50
+410/hilo lupe blanco/Lupe/$990/hogar/50
+411/contenedor rectangular 1 lt/Krea/$1490/hogar/50
+412/destornillador buscapolo/McCarthy/$790/hogar/50
+413/tableta para piscina aquasol/Aquaso/$5790/hogar/50
+414/renovador kit espuma autolimpiante/Kit/$2990/hogar/50
+415/botella keep colores/Keep/$2300/hogar/50
+416/cinta de embalaje scotch ™ cafe/3M/$990/hogar/50
+417/alcohol spray antibacterial 75 ml/Rexona/$1490/farmacia y cuidado personal/50
+418/alcohol desnaturalizado 70° 500 ml/Difem/$1890/farmacia y cuidado personal/50
+419/alcohol desnaturalizado 70° 1 lt/Difem/$4490/farmacia y cuidado personal/50
+420/alcohol gel con glicerina simond’s 130 ml/Simond’s/$1490/farmacia y cuidado personal/50
+421/copos de algodon 100 unidad/Family Care/$1190/farmacia y cuidado personal/50
+422/alcohol gel 320 ml/Elite/$3290/farmacia y cuidado personal/50
+423/alcohol gel 340 ml/Plelarmina/$1990/farmacia y cuidado personal/50
+424/alcohol spray antibacterial 125/Rexoina/$1650/farmacia y cuidado personal/50
+425/algodon bolsa 250 gr/Napaluch/$5490/farmacia y cuidado personal/50
+426/alcohol gel 60 ml/Bidex/$1490/farmacia y cuidado personal/50
+427/hilo dental oral-b essential floss 25 ml/Oral-b/$2990/farmacia y cuidado personal/50
+428/pack duo phb super 8/PHB/$5490/farmacia y cuidado personal/50
+429/hilo dental seda suave con fluor menta/Vitis/$3590/farmacia y cuidado personal/50
+430/pack adhesivo delgado 40 unidades/Nexcare/$3150/farmacia y cuidado personal/50
+431/algodon napaluch bolsa 100 gr prensado/Napaluch/$1290/farmacia y cuidado personal/50
+432/alcohol gel care 340 ml/Difem/$3990/farmacia y cuidado personal/50
+433/alcohol gel 100 ml/Brooks/$1790/farmacia y cuidado personal/50
+434/pasta dental anticaries 100 ml/Vitis/$4790/farmacia y cuidado personal/50
+435/pasta encias 130 gr/Vitis/$4290/farmacia y cuidado personal/50
+436/pack de 6 unidades cepillo interproximal/Interprox/$4790/farmacia y cuidado personal/50
+437/parche remocion sin dolor 15 unidades/Nexcare/$4990/farmacia y cuidado personal/50
+438/pasta dental 130 gr/Vitis/$3090/farmacia y cuidado personal/50
+439/anteojos de lectura gris 2.5/Total View/$5290/farmacia y cuidado personal/50
+440/pasta dental sensible 100 gr/Vitis/$4790/farmacia y cuidado personal/50
+441/pack cepillo de dientes+mini pasta dental/Vitis/$3390/farmacia y cuidado personal/50
+442/cepillo dental 7600 smart ultra soft/Curaprox/$3290/farmacia y cuidado personal/50
+443/cepillo dental 5460 super soft ortho/Curapro/$3490/farmacia y cuidado personal/50
+444/pasta blanqueadora 100 ml/Vitis/$5090/farmacia y cuidado personal/50
+445/colutorio encias 500 ml/Vitis/$6390/farmacia y cuidado personal/50
+446/limpiador lingual/Halita/$3290/farmacia y cuidado personal/50
+447/pack de 6 unidades cepillo interproximal/Interprox/$4790/farmacia y cuidado personal/50
+448/preservativo de latex nuda 21 unidades/LifeStyles/$10490/farmacia y cuidado personal/50
+449/vitamina c light multisabor stevia 32 caps/Prater/$2990/farmacia y cuidado personal/50
+450/pasta encias 140 gr/Nopaluch/$3450/farmacia y cuidado personal/50
+451/colageno hidrolizado 60 cap/Nutrapharm/$8890/farmacia y cuidado personal/50
+452/ciruela plums 100 gr/Nativforlife/$6490/farmacia y cuidado personal/50
+453/cranberry sunvit plus 60 capsulas/Sunvitlife/$11990/farmacia y cuidado personal/50
+454/preservativo de poliisopropeno15 unid/Skyn/$112990/farmacia y cuidado personal/50
+455/cortador de pastillas/Ezy Dose/$3790/farmacia y cuidado personal/50
+456/capsulas de gel rescue 28 unidades/Bach/$9990/farmacia y cuidado personal/50
+457/gasa 3m no adherente 10x10 cm 6 unid/Nexcare/$1590/farmacia y cuidado personal/50
+458/chia 700 gr/Sunvitlife/$12990/farmacia y cuidado personal/50
+459/semillas de chia 375 gr/Sunvitlife/$7990/farmacia y cuidado personal/50
+460/preservativo de latex nuda 12 unidades/LyfeStyles/$8490/farmacia y cuidado personal/50
+461/limpiador de heridas nexcare 200 ml/Nexcare/$3490/farmacia y cuidado personal/50
+462/parche maxima duracion 15 unidades/Nexcare/$4590/farmacia y cuidado personal/50
+463/b complex 100 tabletas/Sunvitlife/$5990/farmacia y cuidado personal/50
+464/vitamina d3 800 ui 30 comprimidos/Farmadel/$3990/farmacia y cuidado personal/50
+465/jabon antibacterial 60 ml/Exmicror/$1390/farmacia y cuidado personal/50
+466/tensiometro de muñeca digital 1 unidad/Zenmed/$24990/farmacia y cuidado personal/50
+467/anteojos de lectura total view, bicolor 2.5/Total View/$6990/farmacia y cuidado personal/50
+468/pasta dentrifico orthodontic 130 gr/Vitis/$3590/farmacia y cuidado personal/50
+469/preservativo de latex rough tider 21 unid/LifeStyles/$10490/farmacia y cuidado personal/50
+470/suplemento alimenticio b complex/Sundown/$12990/farmacia y cuidado personal/50
+471/vitaminas c 1000 mg 133 capsulas/Sundown/$14490/farmacia y cuidado personal/50
+472/vitamina c light maqui stevia 32 comprimidos/Prater/$3590/farmacia y cuidado personal/50
+473/capsulas de gel rescue 28 unidades/Bach/$9990/farmacia y cuidado personal/50
+474/preservativo de latex nuda 3 unidades/LifeStyles/$2190/farmacia y cuidado personal/50
+475/parche hidrocoloide nexcare 10 unidades/Nexcare/$4290/farmacia y cuidado personal/50
+476/gasa 3m no adherente 15x15 cm 6 unid/Nexcare/$1950/farmacia y cuidado personal/50
+477/botiquin mini primeros auxilios/Nexcare/$4290/farmacia y cuidado personal/50
+478/fish oil 1000 mg 100 capsulas blandas/Sunvit/$11990/farmacia y cuidado personal/50
+479/aposito remocion sin dolor 3 unidades/Nexcare/$6090/farmacia y cuidado personal/50
+480/mascara hidratante jelly relaxing/Banobagi/$2990/farmacia y cuidado personal/50
+481/botiquin evolution/Nexcare/$7490/farmacia y cuidado personal/50
+482/genacol xtra 90 capsulas/Newscience/$23900/farmacia y cuidado personal/50
+483/mascarilla facial de te verde/7heaven/$1590/farmacia y cuidado personal/50
+484/termometro infrarrojo/Gama/$29990/farmacia y cuidado personal/50
+485/jabon antibacterial 125 ml/Exmicror/$2290/farmacia y cuidado personal/50
+486/surtido de parches impermeables 15 unids/Nexcare/$4790/farmacia y cuidado personal/50
+487/anteojos de lectura totalview bicolor 3.0/Total View/$6990/farmacia y cuidado personal/50
+488/spray xeros 15 ml/Xeros/$4990/farmacia y cuidado personal/50
+489/pasta dental xeros 7 ml/Xeros/$4690/farmacia y cuidado personal/50
+490/cepillo dental 12000 surgical/Curaprox/$3850/farmacia y cuidado personal/50
+491/cepillo dental 10006 single/Curaprox/$3490/farmacia y cuidado personal/50
+492/colutorio halita 500 ml/Halita/$7490/farmacia y cuidado personal/50
+493/cepillo monotip/Vitis/$3490/farmacia y cuidado personal/50
+500/mascarillas desechables ear loop 20 unids/Flents/$5490/farmacia y cuidado personal/50
+494/cepillo duro/Vitis/$3390/farmacia y cuidado personal/50
+495/food suplement magnesium 250 ml/Sundown/$10990/farmacia y cuidado personal/50
+496/food suplement fish oil 1000 ml/Sundown/$10990/farmacia y cuidado personal/50
+497/food suplement vitamina e 400 ml/Sundown/$13990/farmacia y cuidado personal/50
+498/vitamina d 400 iu 100 softgel/Sundown/$9990/farmacia y cuidado personal/50
+499/guarana 600 mg 60 unidades/Sunvitlife/$11990/farmacia y cuidado personal/50
+501/venditas band aid transparente 40 unids/Band-aid/$3490/farmacia y cuidado personal/50
+502/parche adhesivo hello kity/Band-Aid/$4290/farmacia y cuidado personal/50
+503/micropore 25 mm x9.1mts/Nexcare/$5990/farmacia y cuidado personal/50
+504/suplemento alimenticio vainilla/Slim System/$10490/farmacia y cuidado personal/50
+505/preservativo de poliisopropeno 3 unides/Skyn/$3590/farmacia y cuidado personal/50
+506/multivitaminic+probioticos 30 caps/Nutrapharm/$6990/farmacia y cuidado personal/50
+507/propoleo spray infantil 30 ml/Apivit/$1690/farmacia y cuidado personal/50
+508/fibra dietetica benelax polvo 340 gr/Nutrapharm/$7390/farmacia y cuidado personal/50
+509/preservativo de latex forte 3 unidades/LifeStyles/$3590/farmacia y cuidado personal/50
+510/cranberry secado al vacio/Nativforlife/$6490/farmacia y cuidado personal/50
+511/suplemento para deportistas/Scientific Body/$11490/farmacia y cuidado personal/50
+512/venda elasticada 3 m bronce/Nexcare/$7490/farmacia y cuidado personal/50
+513/compresa 3m cold hot/Nexcare/$10490/farmacia y cuidado personal/50
+514/cinta plastica transpore 12.5mm x9.1m/Nexcare/$3090/farmacia y cuidado personal/50
+515/parche adhesivo fluor 15 unidades/Nexcare/$2990/farmacia y cuidado personal/50
+516/protector para dedos/Flents/$2290/farmacia y cuidado personal/50
+517/preservativo latex climax control/LifeStyles/$8490/farmacia y cuidado personal/50
+518/higienix alcohol toallitas 100 unids/Difem Pharma/$1990/farmacia y cuidado personal/50
+519/suplemento omega 3 60 capsulas/Nutrapharm/$4990/farmacia y cuidado personal/50
+520/espirulina 60 unidades/Nutrapharm/$5990/farmacia y cuidado personal/50
+521/suple de propoleo niños 30 comprimidos/Apivit/$3990/farmacia y cuidado personal/50
+522/maqui secado al vacio 60 gr/Nativforlife/$6990/farmacia y cuidado personal/50
+523/cinta impermeable 4.5 m/Nexcare/$5990/farmacia y cuidado personal/50
+524/preservativo de latex rough rider 3 unids/LifeStyles/$2190/farmacia y cuidado personal/50
+525/mascarillas desechables ear loop 20 unids/Flents/$5490/farmacia y cuidado personal/50
+526/termometro fleury digital punta flexible/Total Care/$4490/farmacia y cuidado personal/50
+527/siesta mask mascara de descanso/Flents/$3290/farmacia y cuidado personal/50
+528/preservativo de latex rough rider 3 unids/LifeStyles/$2190/farmacia y cuidado personal/50
