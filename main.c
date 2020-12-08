@@ -38,6 +38,7 @@ int main (void) {
     import(idMap,typeMap,brandMap);
     List *L = create_list();
     TreeMap *tm = createTreeMap(lower_than_int);
+    TreeMap *tmc = createTreeMap(lower_than_string);
     printf("¿Desea ver un tutorial?\n");
     printf("1. Si\n");
     printf("2. No\n");
@@ -54,10 +55,11 @@ int main (void) {
         printf("4. Finalizar compra\n");
         printf("5. Mostrar puntos acumulados\n");
         printf("6. Soporte de ayuda\n");
-        printf("7. Cerrar aplicacion");
+        printf("7. Cerrar aplicacion\n");
         scanf("%d", &op);
         if (op == 1) {
           while (op2 != 2) {
+              L=create_list();
               printf("Seleccione una opción:\n\n");
               printf("1. Buscar por producto\n");
               printf("2. Buscar por tipo de producto\n");
@@ -85,15 +87,14 @@ int main (void) {
                   price_sort(L, tm);
               }
               if (op == 2) {
-                  brand_sort(L, tm);
+                  brand_sort(L, tmc);
               }
               if (op == 3) {
-                  type_sort(L, tm);
+                  type_sort(L, tmc);
               }
               if (op == 4) {
-                  az_sort(L, tm);
+                  az_sort(L, tmc);
               }
-              clear(L);
               printf("Escriba 1 si desea agregar algun producto al carro\n");
               scanf("%d", &op);
               if (op == 1) {

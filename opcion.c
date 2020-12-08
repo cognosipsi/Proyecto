@@ -136,8 +136,9 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
 }
 
 void search_product(HashMap *idMap, List *L) {
-    char search[40];
-    int number = 1;
+    char search[60];
+    L = create_list();
+    
     product *iterator;
     printf("Ingrese la palabra a buscar (máximo 40 carácteres) :\n"); // Búsqueda por 
     scanf("%s", search);                                              // coincidencia
@@ -145,57 +146,131 @@ void search_product(HashMap *idMap, List *L) {
     char *founded1;
     char *founded2;
     char *founded3;
-    bool exist = false;
     while(iterator != NULL) {
-      founded1 = strstr(search, iterator-> name);
-      founded2 = strstr(search, iterator-> brand);
-      founded3 = strstr(search, iterator-> type);
+      founded1 = strstr(iterator-> name, search);
+      founded2 = strstr(iterator-> brand, search);
+      founded3 = strstr(iterator-> type, search);
       if(founded1 != NULL || founded2 != NULL || founded3 != NULL) {
-        exist = true;
+        //printf("%s %s %s \n", iterator-> name, iterator->brand, iterator->type);
+        push_back(L,iterator);
       }
-      if (exist){
-              printf(" %s %s %s ", iterator-> name, iterator->brand, iterator->type);
-      }
-      iterator=nextMap(idMap);
+      iterator = nextMap(idMap);
     }
 }
 
 void search_type(HashMap *typeMap, List *L) {
-    /*
-    int num;
-    printf("Seleccione la categoría según número (Entre 1 y 8) :\n");
-    printf("1.-Pan y pasteleria\n2.-Fiambreria\n3.-Congelados\n4.-Carne\n5.-Frutas y verduras\n6.-Botilleria\n7.-Hogar\n8.-Farmacia y cuidado personal\n\n");
-    scanf("%i ", &num);
-    */
+  int num = 1,num2=1;
+  product *iterator;
+  L=firstMap(typeMap);
+  while(L != NULL) {
+    iterator=first(L);
+    printf("%d.- %s\n",num,iterator->type);
+    num++;    
+    L=nextMap(typeMap);
+  }
+  printf("Seleccione el tipo que quiere\n");
+  scanf("%d ", &num);
+  L=firstMap(typeMap);
+  while(num2!=num) {
+    num2++;
+    L=nextMap(typeMap);
+  }
 }
 
 void search_brand(HashMap *brandMap, List *L) {
   int num = 1,num2=1;
   product *iterator;
-  List *L = create_list();
   L=firstMap(brandMap);
   while(L != NULL) {
     iterator=first(L);
-    printf("%d.- %s",num,iterator->brand);
+    printf("%d.- %s\n",num,iterator->brand);
     num++;    
     L=nextMap(brandMap);
   }
   printf("Seleccione la marca que quiere\n");
   scanf("%d ", &num);
   L=firstMap(brandMap);
-  
-  
+  while(num2!=num) {
+    num2++;
+    L=nextMap(brandMap);
+  }
 }
 
-void price_sort(List *L, TreeMap *t) {
-    ;
+void price_sort(List *L, TreeMap *tm) {
+    product *iterator = first(L);
+    while (iterator != NULL) {
+        insertTreeMap(tm, iterator->price, iterator);
+        iterator = next(L);
+    }
+    iterator = firstTreeMap(tm);
+    while (iterator != NULL) {
+        printf("%s ", iterator->id);	
+        printf("%s ", iterator->name);	
+        printf("%s ", iterator->brand);	
+        printf("%s ", iterator->price);	
+        printf("%s ", iterator->type);
+        printf("%d ", iterator->stock);	
+        printf("\n");	
+        iterator = nextTreeMap(tm);
+    }
 }
 
-void brand_sort(List *L, TreeMap *t) {}
+void brand_sort(List *L, TreeMap *tmc) {
+    product *iterator = first(L);
+    while (iterator != NULL) {
+        insertTreeMap(tmc, iterator->brand, iterator);
+        iterator = next(L);
+    }
+    iterator = firstTreeMap(tmc);
+    while (iterator != NULL) {
+        printf("%s ", iterator->id);	
+        printf("%s ", iterator->name);	
+        printf("%s ", iterator->brand);	
+        printf("%s ", iterator->price);	
+        printf("%s ", iterator->type);
+        printf("%d ", iterator->stock);	
+        printf("\n");	
+        iterator = nextTreeMap(tmc);
+    }
+}
 
-void type_sort(List *L, TreeMap *t) {}
+void type_sort(List *L, TreeMap *tmc) {
+    product *iterator = first(L);
+    while (iterator != NULL) {
+        insertTreeMap(tmc, iterator->type, iterator);
+        iterator = next(L);
+    }
+    iterator = firstTreeMap(tmc);
+    while (iterator != NULL) {
+        printf("%s ", iterator->id);	
+        printf("%s ", iterator->name);	
+        printf("%s ", iterator->brand);	
+        printf("%s ", iterator->price);	
+        printf("%s ", iterator->type);
+        printf("%d ", iterator->stock);	
+        printf("\n");	
+        iterator = nextTreeMap(tmc);
+    }
+}
 
-void az_sort(List *L, TreeMap *t) {}
+void az_sort(List *L, TreeMap *tmc) {
+    product *iterator = first(L);
+    while (iterator != NULL) {
+        insertTreeMap(tmc, iterator->type, iterator);
+        iterator = next(L);
+    }
+    iterator = firstTreeMap(tmc);
+    while (iterator != NULL) {
+        printf("%s ", iterator->id);	
+        printf("%s ", iterator->name);	
+        printf("%s ", iterator->brand);	
+        printf("%s ", iterator->price);	
+        printf("%s ", iterator->type);
+        printf("%d ", iterator->stock);	
+        printf("\n");	
+        iterator = nextTreeMap(tmc);
+    }
+}
 
 void push_cart() {}
 
