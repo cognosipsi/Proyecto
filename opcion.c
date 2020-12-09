@@ -9,10 +9,10 @@
 #include "treemap.h"
 
 typedef struct{
-    char id[10];      // Código del producto
+    char id[10];     // Código del producto
     char name[60];   // Nombre del producto
     char brand[40];  // Marca del producto
-    char price[10];       // Precio del producto
+    int price;  // Precio del producto
     char type[40];   // Tipo del producto
     int stock;       // Cantidad de productos
 }product;            // Struct de productos
@@ -86,8 +86,8 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
                 strcpy(info-> brand, aux);
             }
             if (i == 3) {
-                strcpy(info-> price, aux);
-                //info->price = atoi(aux);
+                //strcpy(info-> price, aux);
+                info->price = atoi(aux);
             }
             if (i == 4) {
                 strcpy(info-> type, aux);
@@ -135,9 +135,11 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
     }*/
 }
 
-void search_product(HashMap *idMap, List *L) {
+
+
+List *search_product(HashMap *idMap, List *L) {
     char search[60];
-    L = create_list();
+    //L = create_list();
     
     product *iterator;
     printf("Ingrese la palabra a buscar (máximo 40 carácteres) :\n"); // Búsqueda por 
@@ -156,59 +158,61 @@ void search_product(HashMap *idMap, List *L) {
       }
       iterator = nextMap(idMap);
     }
+    return L;
 }
 
-void search_type(HashMap *typeMap, List *L) {
-  int num = 1,num2=1;
-  product *iterator;
-  L=firstMap(typeMap);
-  while(L != NULL) {
-    iterator=first(L);
-    printf("%d.- %s\n",num,iterator->type);
-    num++;    
-    L=nextMap(typeMap);
-  }
-  printf("Seleccione el tipo que quiere\n");
-  scanf("%d ", &num);
-  L=firstMap(typeMap);
-  while(num2!=num) {
-    num2++;
-    L=nextMap(typeMap);
-  }
+List *search_type(HashMap *typeMap, List *L) {
+    int num = 1,num2=1;
+    product *iterator;
+    L=firstMap(typeMap);
+    while(L != NULL) {
+      iterator=first(L);
+      printf("%d.- %s\n",num,iterator->type);
+      num++;    
+      L=nextMap(typeMap);
+    }
+    printf("Seleccione el tipo que quiere\n");
+    scanf("%d", &num);
+    L=firstMap(typeMap);
+    while(num2!=num) {
+      num2++;
+      L=nextMap(typeMap);
+    }
+    return L;
 }
 
-void search_brand(HashMap *brandMap, List *L) {
-  int num = 1,num2=1;
-  product *iterator;
-  L=firstMap(brandMap);
-  while(L != NULL) {
-    iterator=first(L);
-    printf("%d.- %s\n",num,iterator->brand);
-    num++;    
-    L=nextMap(brandMap);
-  }
-  printf("Seleccione la marca que quiere\n");
-  scanf("%d ", &num);
-  L=firstMap(brandMap);
-  while(num2!=num) {
-    num2++;
-    L=nextMap(brandMap);
-  }
+List *search_brand(HashMap *brandMap, List *L) {
+    int num = 1,num2=1;
+    product *iterator;
+    L=firstMap(brandMap);
+    while(L != NULL) {
+      iterator=first(L);
+      printf("%d.- %s\n",num,iterator->brand);
+      num++;    
+      L=nextMap(brandMap);
+    }
+    printf("Seleccione la marca que quiere\n");
+    scanf("%d", &num);
+    L=firstMap(brandMap);
+    while(num2!=num) {
+      num2++;
+      L=nextMap(brandMap);
+    }
+    return L;
 }
 
 void price_sort(List *L, TreeMap *tm) {
     product *iterator = first(L);
+    int precio;
     while (iterator != NULL) {
-        insertTreeMap(tm, iterator->price, iterator);
-        iterator = next(L);
+      insertTreeMap(tm,/*iterator->price*/&iterator->price, iterator);
+      iterator = next(L);
     }
     iterator = firstTreeMap(tm);
-    while (iterator != NULL) {
-        printf("%s ", iterator->id);	
+    while (iterator != NULL) {        
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%s ", iterator->price);	
-        printf("%s ", iterator->type);
+        printf("%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
         iterator = nextTreeMap(tm);
@@ -222,12 +226,10 @@ void brand_sort(List *L, TreeMap *tmc) {
         iterator = next(L);
     }
     iterator = firstTreeMap(tmc);
-    while (iterator != NULL) {
-        printf("%s ", iterator->id);	
+    while (iterator != NULL) {	
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%s ", iterator->price);	
-        printf("%s ", iterator->type);
+        printf("%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
         iterator = nextTreeMap(tmc);
@@ -242,11 +244,9 @@ void type_sort(List *L, TreeMap *tmc) {
     }
     iterator = firstTreeMap(tmc);
     while (iterator != NULL) {
-        printf("%s ", iterator->id);	
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%s ", iterator->price);	
-        printf("%s ", iterator->type);
+        printf("%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
         iterator = nextTreeMap(tmc);
@@ -261,18 +261,20 @@ void az_sort(List *L, TreeMap *tmc) {
     }
     iterator = firstTreeMap(tmc);
     while (iterator != NULL) {
-        printf("%s ", iterator->id);	
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%s ", iterator->price);	
-        printf("%s ", iterator->type);
+        printf("%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
         iterator = nextTreeMap(tmc);
     }
 }
 
-void push_cart() {}
+
+
+void push_cart() {
+    
+}
 
 void pop_cart() {}
 
@@ -284,6 +286,72 @@ void complete_purchase() {}
 
 void show_points() {}
 
-void tutorial() {}
+void tutorial() {
+    int op;
+    printf("Hola querido usuario, bienvenido al manual de ayuda provisto por Nopaluch:\n\n\n");
+    printf("Esta aplicacion funciona a traves de un menu principal de 7 opciones con submenus que contendrán las distintas herramientas que ofrece la aplicación.\n\n");
+    printf("Estas se le mostraran de la siguiente manera:\n");
+    printf("  1. Opcion 1\n");
+    printf("  2. Opcion 2\n");
+    printf("  3. Opcion 3\n\n");
+    printf("Para seleccionar una, deberá ingresar en la terminal el numero de la opcion que desea ejecutar y luegro presionar enter.\n\n");
+    printf("En las opciones en las que se le pidan datos (como por ejemplo en la busqueda), debera ingresar una sola palabra.\n\n");
+    printf("Por ejemplo para realizar una compra:\n");
+    printf("  1. Seleccione la  opción 1 para buscar los productos.\n");
+    printf("  2. Luego escoja el metodo de busqueda (por producto, por tipo de producto o por marca).\n");
+    printf("  3. Indique el orden en el que desea que sean desplegados los productos (por precio, por marca, por tipo u orden alfabetico).\n");
+    printf("  4. Ahora aparecerá una lista con productos que usted busco y en caso de querer agregar uno de estos al carro, debera ingresar 1 y luego el numero del producto deseado (al igual que con las opciones).\n");
+    printf("  5. Si desea seguir buscando presione 2, sino presione 1\n");
+    printf("  6. Al presionar 1 en el paso anterior, se volvera al menu principal, donde se seleccionara la opcion 4 para finalizar la compra\n\n\n");
+    printf("¡Gracias por escoger Nopaluch!\n");
+    printf("Ingrese 1 para terminar el tutorial\n");
+    scanf("%d", &op);
+    if (op == 1) return;
+}
 
-void faq() {}
+void faq() {
+    int op;
+    printf("-¿Que es Nopaluch?\n\n");
+    printf("Nopaluch es una aplicacion de supermercado virtual donde se pueda comprar productos de manera más segura, sencilla y didáctica.\n\n");
+    printf("Nopaluch es una aplicacion de supermercado virtual donde se pueda comprar productos de manera más segura, sencilla y didáctica.\n\n");
+    printf("Funciona a traves del siguiente menu principal con 7 opciones:\n");
+    printf("  1. Buscar.\n");
+    printf("  2. Mostrar carro.\n\n");
+    printf("  3. Productos recomendados.\n");
+    printf("  4. Finalizar compra.\n");
+    printf("  5. Mostrar puntos acumulados.\n");
+    printf("  6. Soporte de ayuda.\n");
+    printf("  7. Cerrar aplicación.\n\n");
+    printf("  En este menú, las siguientes opciones poseen sus propias funciones (submenús):\n\n");
+    printf("  1. Buscar:\n");
+    printf("    a. Buscar por producto.\n");
+    printf("    \n");
+    printf("    \n");
+    printf("    \n");
+    printf("    \n");
+    printf("    \n");
+    printf("    \n\n");
+    printf("  2. Mostrar carro:\n");
+    printf("    \n\n");
+    printf("  6. Soporte de ayuda:\n");
+    printf("    \n\n");
+    printf("    \n\n\n");
+    printf("-¿Que limitaciones posee la aplicacion?\n\n");
+    printf("\n\n");
+    printf("\n\n\n");
+    printf("-¿Como funcionan los puntos acumulados?\n\n");
+    printf("\n\n");
+    printf("\n\n\n");
+    printf("-¿Cómo se seleccionan los productos recomendados?\n\n");
+    printf("\n\n");
+    printf("\n\n\n");
+    printf("-¿Como se realiza una compra?\n\n");
+    printf("\n\n");
+    printf("\n\n\n");
+    printf("-¿Como puedo acumular puntos?\n\n");
+    printf("\n\n");
+    printf("\n\n\n");
+    printf("Ingrese 1 para terminar el tutorial\n\n");
+    scanf("%d", &op);
+    if (op == 1) return;
+}

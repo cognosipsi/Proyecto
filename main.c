@@ -46,7 +46,7 @@ int main (void) {
     if(op == 1) {
         tutorial();
     }
-    
+    List *cart=create_list();
     while(op != 7) {
         printf("Seleccione una opción:\n\n");
         printf("1. Buscar\n");
@@ -67,13 +67,13 @@ int main (void) {
               scanf("%d", &op);
 
               if (op == 1) {
-                  search_product(idMap, L);
+                  L = search_product(idMap, L);
               }
               if (op == 2) {
-                  search_type(typeMap, L);
+                  L = search_type(typeMap, L);
               }
               if (op == 3) {
-                  search_brand(brandMap, L);
+                  L = search_brand(brandMap, L);
               }
 
               printf("Seleccione el orden deseado:\n\n");
@@ -82,7 +82,6 @@ int main (void) {
               printf("3. Orden por tipo\n");
               printf("4. Orden alfabético\n");
               scanf("%d", &op);
-
               if (op == 1) {
                   price_sort(L, tm);
               }
@@ -98,12 +97,13 @@ int main (void) {
               printf("Escriba 1 si desea agregar algun producto al carro\n");
               scanf("%d", &op);
               if (op == 1) {
-                  push_cart();
+                  L=push_cart();
               }
               printf("¿Desea seguir buscando?\n");
               printf("1. Sí\n");
               printf("2. No\n");
               scanf("%d", &op2);
+              if (op2 == 2) break;
           }
         }
         
