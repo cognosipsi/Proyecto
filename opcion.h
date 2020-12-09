@@ -33,11 +33,9 @@ void pop_cart(List *, TreeMap *);
 
 void show_cart();
 
-void show_recom();
+int complete_purchase(List *, int);
 
-int complete_purchase(List *);
-
-void show_points();
+void show_points(int);
 
 void tutorial();
 

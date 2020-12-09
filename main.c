@@ -32,10 +32,11 @@ int higher_than_int(void* key1, void* key2){
 int main (void) {
     int op;
     int op2;
-    HashMap *idMap = createMap(100);
-    HashMap *brandMap = createMap(100);
-    HashMap *typeMap = createMap(100);
+    HashMap *idMap = createMap(100); //mapa de id
+    HashMap *brandMap = createMap(100);// mapa para marca
+    HashMap *typeMap = createMap(100); // mapa  para tipo
     import(idMap,typeMap,brandMap);
+    int points;
     List *L = create_list();
     TreeMap *tm = createTreeMap(lower_than_int);
     TreeMap *tmc = createTreeMap(lower_than_string);
@@ -47,19 +48,20 @@ int main (void) {
         tutorial();
     }
     List *cart=create_list();
-    while(op != 7) {
-        printf("Seleccione una opción:\n\n");
+    while(op != 6) {
+        printf("Seleccione una opción:\n\n"); //menu principal
         printf("1. Buscar\n");
         printf("2. Mostrar carro\n");
-        printf("3. Productos recomendados\n");
-        printf("4. Finalizar compra\n");
-        printf("5. Mostrar puntos acumulados\n");
-        printf("6. Soporte de ayuda\n");
-        printf("7. Cerrar aplicacion\n");
+        printf("3. Finalizar compra\n");
+        printf("4. Mostrar puntos acumulados\n");
+        printf("5. Soporte de ayuda\n");
+        printf("6. Cerrar aplicacion\n");
         scanf("%d", &op);
         if (op == 1) {
           while (op2 != 2) {
               L=create_list();
+              tm = createTreeMap(lower_than_int);
+              tmc = createTreeMap(lower_than_string);
               printf("Seleccione una opción:\n\n");
               printf("1. Buscar por producto\n");
               printf("2. Buscar por tipo de producto\n");
@@ -100,6 +102,7 @@ int main (void) {
                   if(op==1) cart=push_cart(cart,tm);
                   else cart=push_cart(cart,tmc);
               }
+              else break;
               printf("¿Desea seguir buscando?\n");
               printf("1. Sí\n");
               printf("2. No\n");
@@ -119,22 +122,18 @@ int main (void) {
         }
         
         if (op == 3) {
-            show_recom();
-        }
-        
-        if (op == 4) {
-            op=complete_purchase(cart);
-            if(op==7) {
+            op=complete_purchase(cart, points);
+            if(op==6) {
               printf("gracias por su compra ingrese cuelquier caracter para salir");
               scanf("%d",&op);
             }
         }
         
-        if (op == 5) {
-            show_points();
+        if (op == 4) {
+            show_points(points);
         }
         
-        if (op == 6) {
+        if (op == 5) {
             printf("Seleccione una opción:\n\n");
             printf("1. Tutorial\n");
             printf("2. Preguntas frecuentes\n");
