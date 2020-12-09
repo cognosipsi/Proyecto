@@ -9,17 +9,17 @@
 #include "treemap.h"
 
 typedef struct{
-    char id[10];     // Código del producto
-    char name[60];   // Nombre del producto
-    char brand[40];  // Marca del producto
-    int price;  // Precio del producto
-    char type[40];   // Tipo del producto
-    int stock;       // Cantidad de productos
-}product;            // Struct de productos
+    char id[10];      // Código del producto
+    char name[60];    // Nombre del producto
+    char brand[40];   // Marca del producto
+    int price;        // Precio del producto
+    char type[40];    // Tipo del producto
+    int stock;        // Cantidad de productos
+}product;             // Struct de productos
 
 typedef struct{
-    product product; // Struct de productos
-    int to_buy;      // Cantidad de productos a comprar
+    product producto; // Struct de productos
+    int to_buy;       // Cantidad de productos a comprar
 }purchase;
 
 char *strdup(const char *str) {
@@ -40,7 +40,7 @@ const char *get_csv_field (char * tmp, int k) {
             i++;
             continue;
         }
-        if(open_mark || tmp[i]!= '/'){ // análisis separador, antes ","
+        if(open_mark || tmp[i]!= '/'){    // Se define el separador de textos como '/'
             if(k==j) ret[i-ini_i] = tmp[i];
             i++;
             continue;
@@ -61,7 +61,7 @@ const char *get_csv_field (char * tmp, int k) {
     return NULL;
 }
 
-void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
+void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) { //Se guardan en mapas distintos para facilitar el ordenamiento
     FILE *fp = fopen("catalogo.txt", "r");
     char linea[1024];
     int i, j;
@@ -86,7 +86,6 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
                 strcpy(info-> brand, aux);
             }
             if (i == 3) {
-                //strcpy(info-> price, aux);
                 info->price = atoi(aux);
             }
             if (i == 4) {
@@ -106,7 +105,7 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
         else {
           push_back(searchMap(brandMap, info->brand), info);
         }
-        if(searchMap(typeMap, info-> type) == NULL) {
+        if(searchMap(typeMap, info-> type) == NULL) { 
             ProductList = create_list();
             push_back(ProductList, info);
             insertMap(typeMap, info->type, ProductList);
@@ -114,7 +113,6 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
         else {
             push_back(searchMap(typeMap, info-> type), info);
         }
-        if(atoi(info-> id) == 550) break;
     }
     /*ProductList = create_list();
     ProductList = firstMap(brandMap);
@@ -139,8 +137,6 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
 
 List *search_product(HashMap *idMap, List *L) {
     char search[60];
-    //L = create_list();
-    
     product *iterator;
     printf("Ingrese la palabra a buscar (máximo 40 carácteres) :\n"); // Búsqueda por 
     scanf("%s", search);                                              // coincidencia
@@ -149,11 +145,10 @@ List *search_product(HashMap *idMap, List *L) {
     char *founded2;
     char *founded3;
     while(iterator != NULL) {
-      founded1 = strstr(iterator-> name, search);
+      founded1 = strstr(iterator-> name, search); //'strstr' solo se utiliza para confirmar que se encontro coincidecia (de la palabra buscada vs nombre del producto)
       founded2 = strstr(iterator-> brand, search);
       founded3 = strstr(iterator-> type, search);
-      if(founded1 != NULL || founded2 != NULL || founded3 != NULL) {
-        //printf("%s %s %s \n", iterator-> name, iterator->brand, iterator->type);
+      if(founded1 != NULL || founded2 != NULL || founded3 != NULL) { // Basta con que existe una vez cualquiera de las tres comparaciones para añadir el producto (ya sea por nombre, marca o tipo)
         push_back(L,iterator);
       }
       iterator = nextMap(idMap);
@@ -161,7 +156,7 @@ List *search_product(HashMap *idMap, List *L) {
     return L;
 }
 
-List *search_type(HashMap *typeMap, List *L) {
+List *search_type(HashMap *typeMap, List *L) { //luego de cada forma de busqueda se implementa un ordenamiento que se decide por el usuario para la distribucion de productos
     int num = 1,num2=1;
     product *iterator;
     L=firstMap(typeMap);
@@ -171,8 +166,6 @@ List *search_type(HashMap *typeMap, List *L) {
       num++;    
       L=nextMap(typeMap);
     }
-    printf("Seleccione el tipo que quiere\n");
-    scanf("%d", &num);
     L=firstMap(typeMap);
     while(num2!=num) {
       num2++;
@@ -191,8 +184,6 @@ List *search_brand(HashMap *brandMap, List *L) {
       num++;    
       L=nextMap(brandMap);
     }
-    printf("Seleccione la marca que quiere\n");
-    scanf("%d", &num);
     L=firstMap(brandMap);
     while(num2!=num) {
       num2++;
@@ -203,6 +194,7 @@ List *search_brand(HashMap *brandMap, List *L) {
 
 void price_sort(List *L, TreeMap *tm) {
     product *iterator = first(L);
+    int i=1;
     int precio;
     while (iterator != NULL) {
       insertTreeMap(tm,/*iterator->price*/&iterator->price, iterator);
@@ -210,10 +202,11 @@ void price_sort(List *L, TreeMap *tm) {
     }
     iterator = firstTreeMap(tm);
     while (iterator != NULL) {        
-        printf("%s ", iterator->name);	
+        printf("%d %s ",i, iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
-        printf("%d ", iterator->stock);	
+        printf("$%d ", iterator->price);	
+        printf("%d ", iterator->stock);
+        i++;	
         printf("\n");	
         iterator = nextTreeMap(tm);
     }
@@ -221,70 +214,167 @@ void price_sort(List *L, TreeMap *tm) {
 
 void brand_sort(List *L, TreeMap *tmc) {
     product *iterator = first(L);
+    int cont = 1;
     while (iterator != NULL) {
         insertTreeMap(tmc, iterator->brand, iterator);
         iterator = next(L);
     }
     iterator = firstTreeMap(tmc);
     while (iterator != NULL) {	
+        printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
+        printf("$%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
+        cont++;
         iterator = nextTreeMap(tmc);
     }
 }
 
 void type_sort(List *L, TreeMap *tmc) {
     product *iterator = first(L);
+    int cont = 1;
     while (iterator != NULL) {
         insertTreeMap(tmc, iterator->type, iterator);
         iterator = next(L);
     }
     iterator = firstTreeMap(tmc);
     while (iterator != NULL) {
+        printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
+        printf("$%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
+        cont++;
         iterator = nextTreeMap(tmc);
     }
 }
 
 void az_sort(List *L, TreeMap *tmc) {
     product *iterator = first(L);
+    int cont = 1;
     while (iterator != NULL) {
-        insertTreeMap(tmc, iterator->type, iterator);
+        insertTreeMap(tmc, iterator->name, iterator);
         iterator = next(L);
     }
     iterator = firstTreeMap(tmc);
     while (iterator != NULL) {
+        printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
+        printf("$%d ", iterator->price);	
         printf("%d ", iterator->stock);	
-        printf("\n");	
+        printf("\n");
+        cont++;
         iterator = nextTreeMap(tmc);
     }
 }
 
-
-
-void push_cart() {
-    
+List *push_cart(List *cart,TreeMap *tree) {
+    product *iteration=firstTreeMap(tree);
+    purchase *comprado;
+    int op,num=1;
+    printf("Ingrese el numero a la izquierda del nombre del producto para subirlo al carro\n");
+    scanf("%d",&op);
+    while(num != op){
+      num++;
+      iteration=nextTreeMap(tree);
+    }
+    op = 51;
+    while (op >=iteration->stock || op < 0){ //la cantidad pedida no puede superar el stock disponible ni tampoco puede ser un numero negativo logicamente
+      printf("ingrese la cantidad que quiera comprar del producto\n");
+      scanf("%d", &op);
+      if(op >50 ){
+        printf("No puede ingresar más de %d productos iguales al carrito\n",iteration->stock);
+      }
+    }
+    iteration->stock=iteration->stock-op;
+    comprado->to_buy=op;
+    comprado->producto=*iteration;   
+    push_back(cart, comprado);
+    comprado = first(cart);
+    while(iteration != NULL) {
+      printf("%s %d\n",comprado->producto.name,comprado->to_buy);
+      iteration=next(cart);
+    }
+    return cart;    
 }
 
-void pop_cart() {}
+void pop_cart(List *cart, TreeMap *tm) {
+    product *iterator = firstTreeMap(tm);
+    purchase *deleted;
+    product *iter8tor = first(cart);
+    int op;
+    int num = 1;
+    printf("Ingrese el numero del producto que desea quitar del carro:\n");
+    scanf("%d", &op);
+    
+    while (op != num) { //se itera en el arbol para encontrar el producto
+        iterator = nextTreeMap(tm);
+        num++;
+    }
+    op = iterator->stock+1;
+    while (op >= iterator->stock || op < 0) {
+        printf("Ingrese la cantidad de productos que desea quitar del carro\n");
+        scanf("%d", &op);
+        if (op >= iterator->stock) {
+            iterator->stock = 0;
+            deleted->to_buy = 0;
+        }
+    }
+    iterator->stock += op;  
+    deleted->to_buy -= op;
 
-void show_cart() {}
+    while (iter8tor != NULL) { 
+        if (iter8tor == &deleted->producto) {
+            pop_current(cart);
+            return;
+        }
+        iter8tor = next(cart);
+    }
+}
 
-void show_recom() {}
+void show_cart(List *cart) { // Muestra los articulos actuales encontrados en el carro de compras
+    product *iterator = first(cart);
+    while (iterator != NULL) {
+        printf("%s ", iterator->name);	
+        printf("%s ", iterator->brand);	
+        printf("$%d ", iterator->price);	
+        printf("%d ", iterator->stock);
+        printf("\n");
+        iterator = next(cart);
+    }
+}
 
-void complete_purchase() {}
+int complete_purchase(List *L, int points) {
+    int op, cuenta=0;
+    int rut;
+    printf("Esta seguro de finalizar la compra, ingrese 1 para finalizar\n");
+    purchase *ite=first(L);
+    scanf("%d",&op);
+    if(op==1) {
+      if(ite!=NULL) {
+        cuenta=cuenta+ite->to_buy*ite->producto.price;
+        printf("%s %d\n",ite->producto.name,ite->to_buy);
+      }
+      printf("Total a pagar: $%d\n",cuenta);
+      return 7;    
+    }
+    return 4;
+    printf("Presione 1 para acumular puntos\n");
+    scanf("%d", &op);
+    if (op == 1) {
+        printf("Ingrese su rut\n");
+        scanf("%d", &rut);
+        points = cuenta/100;
+    }
+}
 
-void show_points() {}
+void show_points(int points) {
+    printf("%d\n", points);
+}
 
 void tutorial() {
     int op;
@@ -325,32 +415,36 @@ void faq() {
     printf("  En este menú, las siguientes opciones poseen sus propias funciones (submenús):\n\n");
     printf("  1. Buscar:\n");
     printf("    a. Buscar por producto.\n");
-    printf("    \n");
-    printf("    \n");
-    printf("    \n");
-    printf("    \n");
-    printf("    \n");
-    printf("    \n\n");
+    printf("    b. Buscar por tipo de producto.\n");
+    printf("    c. Buscar por marca.\n");
+    printf("    d. Orden por precio  (ascendente).\n");
+    printf("    e. Orden por marca.\n");
+    printf("    f. Orden por tipo.\n");
+    printf("    g. Orden alfabético.\n\n");
+    printf("    h. Agregar al carro.\n\n");
     printf("  2. Mostrar carro:\n");
-    printf("    \n\n");
+    printf("    a. Quitar del carro.\n\n");
     printf("  6. Soporte de ayuda:\n");
-    printf("    \n\n");
-    printf("    \n\n\n");
-    printf("-¿Que limitaciones posee la aplicacion?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
+    printf("    a. Tutorial\n\n");
+    printf("    b. Preguntas frecuentes.\n\n\n");
+    printf("  -¿Que limitaciones posee la aplicacion?\n\n");
+    printf("  -Necesita de conexión a Internet para poder funcionar.\n");
+    printf("  -No posee imágenes digitales (y junto con esto la publicidad).\n");
+    printf("  -La interacción es únicamente a través del teclado, a diferencia de otras aplicaciones con interacción táctil.\n");
+    printf("  -No se pueden realizar búsquedas de más de una palabra.\n\n\n");
     printf("-¿Como funcionan los puntos acumulados?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
-    printf("-¿Cómo se seleccionan los productos recomendados?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
+    printf("Cada vez que se realiza una compra se le pregunta al usuario si desea acumular puntos, al acceder se le solicita su rut.\n\n");
+    printf("Estos puntos corresponden al total de la compra dividido en 100 y como indica su nombre, se van acumulando (en cada compra).\n\n\n");
     printf("-¿Como se realiza una compra?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
+    printf("  1. Seleccione la  opción 1 para buscar los productos.\n");
+    printf("  2. Luego escoja el metodo de busqueda (por producto, por tipo de producto o por marca).\n");
+    printf("  3. Indique el orden en el que desea que sean desplegados los productos (por precio, por marca, por tipo u orden alfabetico).\n");
+    printf("  4. Ahora aparecerá una lista con productos que usted busco y en caso de querer agregar uno de estos al carro, debera ingresar 1 y luego el numero del producto deseado (al igual que con las opciones)\n");
+    printf("  5. Si desea seguir buscando presione 2, sino presione 1\n");
+    printf("  6. Al presionar 1 en el paso anterior, se volvera al menu principal, donde se seleccionara la opcion 4 para finalizar la compra\n\n\n");
     printf("-¿Como puedo acumular puntos?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
+    printf("Al realizar una compra se le preguntara si desea acumular puntos, para  aceptar debera presionar 1.\n\n");
+    printf("Luego se lo solicitara su rut, una vez ingresado le aparecera un mensaje diciendo Operacion exitosa.\n\n\n");
     printf("Ingrese 1 para terminar el tutorial\n\n");
     scanf("%d", &op);
     if (op == 1) return;

@@ -27,17 +27,15 @@ void type_sort(List *, TreeMap *);
 
 void az_sort(List *, TreeMap *);
 
-L *push_cart(*List);
+List *push_cart(List*,TreeMap*);
 
-void pop_cart();
+void pop_cart(List *, TreeMap *);
 
 void show_cart();
 
-void show_recom();
+int complete_purchase(List *, int);
 
-void complete_purchase();
-
-void show_points();
+void show_points(int);
 
 void tutorial();
 
