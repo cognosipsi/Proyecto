@@ -114,7 +114,7 @@ int main (void) {
             scanf("%d", &op);
 
             if (op == 1) {
-                pop_cart();
+                pop_cart(cart, tm);
             }
         }
         
@@ -123,7 +123,7 @@ int main (void) {
         }
         
         if (op == 4) {
-            complete_purchase();
+            complete_purchase(cart);
         }
         
         if (op == 5) {

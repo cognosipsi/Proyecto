@@ -29,13 +29,13 @@ void az_sort(List *, TreeMap *);
 
 List *push_cart(List*,TreeMap*);
 
-void pop_cart();
+void pop_cart(List *, TreeMap *);
 
 void show_cart();
 
 void show_recom();
 
-void complete_purchase();
+void complete_purchase(*List);
 
 void show_points();
 

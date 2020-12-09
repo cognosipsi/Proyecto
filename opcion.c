@@ -18,7 +18,7 @@ typedef struct{
 }product;            // Struct de productos
 
 typedef struct{
-    product producto; // Struct de productos
+    product producto;// Struct de productos
     int to_buy;      // Cantidad de productos a comprar
 }purchase;
 
@@ -213,7 +213,7 @@ void price_sort(List *L, TreeMap *tm) {
     while (iterator != NULL) {        
         printf("%d %s ",i, iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
+        printf("$%d ", iterator->price);	
         printf("%d ", iterator->stock);
         i++;	
         printf("\n");	
@@ -233,7 +233,7 @@ void brand_sort(List *L, TreeMap *tmc) {
         printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
+        printf("$%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
         cont++;
@@ -253,7 +253,7 @@ void type_sort(List *L, TreeMap *tmc) {
         printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
+        printf("$%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
         cont++;
@@ -273,7 +273,7 @@ void az_sort(List *L, TreeMap *tmc) {
         printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
-        printf("%d ", iterator->price);	
+        printf("$%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");
         cont++;
@@ -301,6 +301,7 @@ List *push_cart(List *cart,TreeMap *tree) {
         printf("No puede ingresar más de %d productos iguales al carrito\n",iteration->stock);
       }
     }
+    iteration->stock=iteration->stock-op;
     comprado->to_buy=op;
     comprado->producto=*iteration;   
     push_back(cart, comprado);
@@ -312,29 +313,65 @@ List *push_cart(List *cart,TreeMap *tree) {
     return cart;    
 }
 
-void pop_cart() {}
+void pop_cart(List *cart, TreeMap *tm) {
+    product *iterator = firstTreeMap(tm);
+    purchase *deleted;
+    product *iter8tor = first(cart);
+    int op;
+    int num = 1;
+    printf("Ingrese el numero del producto que desea quitar del carro:\n");
+    scanf("%d", &op);
+    
+    while (op != num) {
+        iterator = nextTreeMap(tm);
+        num++;
+    }
+    op = iterator->stock+1;
+    while (op >= iterator->stock || op < 0) {
+        printf("Ingrese la cantidad de productos que desea quitar del carro\n");
+        scanf("%d", &op);
+        if (op >= iterator->stock) {
+            iterator->stock = 0;
+        }
+    }
+    iterator->stock -= op;
+    deleted->to_buy = op;
+    deleted->producto = *iterator;
+
+    while (iterator != &deleted->producto) {
+        //if () {}
+        iterator = next(cart);
+    }
+    pop_current();
+}
 
 void show_cart(List *cart) {
-    product *iterator;
-    purchase *comprado;
-    iterator=first(cart);
-    while(iterator != NULL){
-      printf("%s ", iterator->name);
-      printf("%s ", iterator->brand);
-      printf("%s ", iterator->type);
-      if(iterator->to_buy > 1){
-        printf("");
-      }
+  product*ite;
+  purchase*ita;
+  ite=first(cart);
+  ita=first(cart);
+  while(ite!=NULL){
+    printf("Sus productos son:")
+    printf("%s",ite->name);
+    if(ita->to_buy>1){
+      printf("%d", ita->to_buy);   
+    }else{
+      printf("1");
     }
+    ite=next(cart);
+    ita=next(cart);
+  }
 }
 
 void show_recom() {}
 
-void complete_purchase() {
-    int rut;
-    int acum;
-    printf("Ingrese su rut:");
-    scanf("%d", &rut);
+void complete_purchase(List* L) {
+  int op;
+  printf("Esta seguro de finalizar la compra, ingrese 1 para finalizar\n");
+  scanf("%d",&op);
+  if(op==1) {
+    
+  }
 }
 
 void show_points() {}
