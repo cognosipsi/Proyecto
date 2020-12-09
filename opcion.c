@@ -338,11 +338,12 @@ void pop_cart(List *cart, TreeMap *tm) {
     deleted->to_buy = op;
     deleted->producto = *iterator;
 
-    while (iterator != &deleted->producto) {
+    while (iter8tor != &deleted->producto) {
         //if () {}
-        iterator = next(cart);
+        iter8tor = next(cart);
     }
-    pop_current();
+    //cart->product = iter8tor;
+    pop_current(cart);
 }
 
 void show_cart(List *cart) {
@@ -351,7 +352,7 @@ void show_cart(List *cart) {
   ite=first(cart);
   ita=first(cart);
   while(ite!=NULL){
-    printf("Sus productos son:")
+    printf("Sus productos son:");
     printf("%s",ite->name);
     if(ita->to_buy>1){
       printf("%d", ita->to_buy);   
@@ -365,7 +366,7 @@ void show_cart(List *cart) {
 
 void show_recom() {}
 
-void complete_purchase(List* L) {
+void complete_purchase(List *L) {
   int op;
   printf("Esta seguro de finalizar la compra, ingrese 1 para finalizar\n");
   scanf("%d",&op);
