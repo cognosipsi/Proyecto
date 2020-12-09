@@ -40,7 +40,7 @@ const char *get_csv_field (char * tmp, int k) {
             i++;
             continue;
         }
-        if(open_mark || tmp[i]!= '/'){ // análisis separador, antes ","
+        if(open_mark || tmp[i]!= '/'){    // Se define el separador de textos como '/'
             if(k==j) ret[i-ini_i] = tmp[i];
             i++;
             continue;
@@ -86,7 +86,6 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
                 strcpy(info-> brand, aux);
             }
             if (i == 3) {
-                //strcpy(info-> price, aux);
                 info->price = atoi(aux);
             }
             if (i == 4) {
@@ -106,7 +105,7 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
         else {
           push_back(searchMap(brandMap, info->brand), info);
         }
-        if(searchMap(typeMap, info-> type) == NULL) {
+        if(searchMap(typeMap, info-> type) == NULL) { 
             ProductList = create_list();
             push_back(ProductList, info);
             insertMap(typeMap, info->type, ProductList);
@@ -114,7 +113,6 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
         else {
             push_back(searchMap(typeMap, info-> type), info);
         }
-        if(atoi(info-> id) == 550) break;
     }
     /*ProductList = create_list();
     ProductList = firstMap(brandMap);
@@ -139,8 +137,6 @@ void import(HashMap *idMap, HashMap *typeMap, HashMap *brandMap) {
 
 List *search_product(HashMap *idMap, List *L) {
     char search[60];
-    //L = create_list();
-    
     product *iterator;
     printf("Ingrese la palabra a buscar (máximo 40 carácteres) :\n"); // Búsqueda por 
     scanf("%s", search);                                              // coincidencia
@@ -149,11 +145,10 @@ List *search_product(HashMap *idMap, List *L) {
     char *founded2;
     char *founded3;
     while(iterator != NULL) {
-      founded1 = strstr(iterator-> name, search);
+      founded1 = strstr(iterator-> name, search); //'strstr' solo se utiliza para confirmar que se encontro coincidecia (de la palabra buscada vs nombre del producto)
       founded2 = strstr(iterator-> brand, search);
       founded3 = strstr(iterator-> type, search);
-      if(founded1 != NULL || founded2 != NULL || founded3 != NULL) {
-        //printf("%s %s %s \n", iterator-> name, iterator->brand, iterator->type);
+      if(founded1 != NULL || founded2 != NULL || founded3 != NULL) { // Basta con que existe una vez cualquiera de las tres comparaciones para añadir el producto (ya sea por nombre, marca o tipo)
         push_back(L,iterator);
       }
       iterator = nextMap(idMap);
@@ -161,7 +156,7 @@ List *search_product(HashMap *idMap, List *L) {
     return L;
 }
 
-List *search_type(HashMap *typeMap, List *L) {
+List *search_type(HashMap *typeMap, List *L) { //luego de cada forma de busqueda se implementa un ordenamiento que se decide por el usuario para la distribucion de productos
     int num = 1,num2=1;
     product *iterator;
     L=firstMap(typeMap);
@@ -281,8 +276,6 @@ void az_sort(List *L, TreeMap *tmc) {
     }
 }
 
-
-
 List *push_cart(List *cart,TreeMap *tree) {
     product *iteration=firstTreeMap(tree);
     purchase *comprado;
@@ -294,7 +287,7 @@ List *push_cart(List *cart,TreeMap *tree) {
       iteration=nextTreeMap(tree);
     }
     op = 51;
-    while (op >=iteration->stock || op < 0){
+    while (op >=iteration->stock || op < 0){ //la cantidad pedida no puede superar el stock disponible ni tampoco puede ser un numero negativo logicamente
       printf("ingrese la cantidad que quiera comprar del producto\n");
       scanf("%d", &op);
       if(op >50 ){
@@ -332,47 +325,49 @@ void pop_cart(List *cart, TreeMap *tm) {
         scanf("%d", &op);
         if (op >= iterator->stock) {
             iterator->stock = 0;
+            deleted->to_buy = 0;
         }
     }
-    iterator->stock -= op;
-    deleted->to_buy = op;
-    deleted->producto = *iterator;
+    iterator->stock += op;
+    deleted->to_buy -= op;
 
-    while (iter8tor != &deleted->producto) {
-        //if () {}
+    while (iter8tor != NULL) {
+        if (iter8tor == &deleted->producto) {
+            pop_current(cart);
+            return;
+        }
         iter8tor = next(cart);
     }
-    //cart->product = iter8tor;
-    pop_current(cart);
 }
 
 void show_cart(List *cart) {
-  product*ite;
-  purchase*ita;
-  ite=first(cart);
-  ita=first(cart);
-  while(ite!=NULL){
-    printf("Sus productos son:");
-    printf("%s",ite->name);
-    if(ita->to_buy>1){
-      printf("%d", ita->to_buy);   
-    }else{
-      printf("1");
+    product *iterator = first(cart);
+    while (iterator != NULL) {
+        printf("%s ", iterator->name);	
+        printf("%s ", iterator->brand);	
+        printf("$%d ", iterator->price);	
+        printf("%d ", iterator->stock);
+        printf("\n");
+        iterator = next(cart);
     }
-    ite=next(cart);
-    ita=next(cart);
-  }
 }
 
 void show_recom() {}
 
-void complete_purchase(List *L) {
-  int op;
+int complete_purchase(List *L) {
+  int op, cuenta=0;
   printf("Esta seguro de finalizar la compra, ingrese 1 para finalizar\n");
+  purchase *ite=first(L);
   scanf("%d",&op);
   if(op==1) {
-    
+    if(ite!=NULL) {
+      cuenta=cuenta+ite->to_buy*ite->producto.price;
+      printf("%s %d\n",ite->producto.name,ite->to_buy);
+    }
+    printf("Total a pagar: $%d\n",cuenta);
+    return 7;    
   }
+  return 4;
 }
 
 void show_points() {}

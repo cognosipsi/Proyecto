@@ -123,7 +123,11 @@ int main (void) {
         }
         
         if (op == 4) {
-            complete_purchase(cart);
+            op=complete_purchase(cart);
+            if(op==7) {
+              printf("gracias por su compra ingrese cuelquier caracter para salir");
+              scanf("%d",&op);
+            }
         }
         
         if (op == 5) {

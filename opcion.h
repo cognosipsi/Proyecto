@@ -35,7 +35,7 @@ void show_cart();
 
 void show_recom();
 
-void complete_purchase(List *);
+int complete_purchase(List *);
 
 void show_points();
 
