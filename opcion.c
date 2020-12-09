@@ -12,13 +12,13 @@ typedef struct{
     char id[10];     // Código del producto
     char name[60];   // Nombre del producto
     char brand[40];  // Marca del producto
-    int price;  // Precio del producto
+    int price;       // Precio del producto
     char type[40];   // Tipo del producto
     int stock;       // Cantidad de productos
 }product;            // Struct de productos
 
 typedef struct{
-    product product; // Struct de productos
+    product producto; // Struct de productos
     int to_buy;      // Cantidad de productos a comprar
 }purchase;
 
@@ -203,6 +203,7 @@ List *search_brand(HashMap *brandMap, List *L) {
 
 void price_sort(List *L, TreeMap *tm) {
     product *iterator = first(L);
+    int i=1;
     int precio;
     while (iterator != NULL) {
       insertTreeMap(tm,/*iterator->price*/&iterator->price, iterator);
@@ -210,10 +211,11 @@ void price_sort(List *L, TreeMap *tm) {
     }
     iterator = firstTreeMap(tm);
     while (iterator != NULL) {        
-        printf("%s ", iterator->name);	
+        printf("%d %s ",i, iterator->name);	
         printf("%s ", iterator->brand);	
         printf("%d ", iterator->price);	
-        printf("%d ", iterator->stock);	
+        printf("%d ", iterator->stock);
+        i++;	
         printf("\n");	
         iterator = nextTreeMap(tm);
     }
@@ -221,68 +223,119 @@ void price_sort(List *L, TreeMap *tm) {
 
 void brand_sort(List *L, TreeMap *tmc) {
     product *iterator = first(L);
+    int cont = 1;
     while (iterator != NULL) {
         insertTreeMap(tmc, iterator->brand, iterator);
         iterator = next(L);
     }
     iterator = firstTreeMap(tmc);
     while (iterator != NULL) {	
+        printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
         printf("%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
+        cont++;
         iterator = nextTreeMap(tmc);
     }
 }
 
 void type_sort(List *L, TreeMap *tmc) {
     product *iterator = first(L);
+    int cont = 1;
     while (iterator != NULL) {
         insertTreeMap(tmc, iterator->type, iterator);
         iterator = next(L);
     }
     iterator = firstTreeMap(tmc);
     while (iterator != NULL) {
+        printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
         printf("%d ", iterator->price);	
         printf("%d ", iterator->stock);	
         printf("\n");	
+        cont++;
         iterator = nextTreeMap(tmc);
     }
 }
 
 void az_sort(List *L, TreeMap *tmc) {
     product *iterator = first(L);
+    int cont = 1;
     while (iterator != NULL) {
-        insertTreeMap(tmc, iterator->type, iterator);
+        insertTreeMap(tmc, iterator->name, iterator);
         iterator = next(L);
     }
     iterator = firstTreeMap(tmc);
     while (iterator != NULL) {
+        printf("%d ", cont);
         printf("%s ", iterator->name);	
         printf("%s ", iterator->brand);	
         printf("%d ", iterator->price);	
         printf("%d ", iterator->stock);	
-        printf("\n");	
+        printf("\n");
+        cont++;
         iterator = nextTreeMap(tmc);
     }
 }
 
 
 
-void push_cart() {
-    
+List *push_cart(List *cart,TreeMap *tree) {
+    product *iteration=firstTreeMap(tree);
+    purchase *comprado;
+    int op,num=1;
+    printf("Ingrese el numero a la izquierda del nombre del producto para subirlo al carro\n");
+    scanf("%d",&op);
+    while(num != op){
+      num++;
+      iteration=nextTreeMap(tree);
+    }
+    op = 51;
+    while (op >=iteration->stock || op < 0){
+      printf("ingrese la cantidad que quiera comprar del producto\n");
+      scanf("%d", &op);
+      if(op >50 ){
+        printf("No puede ingresar más de %d productos iguales al carrito\n",iteration->stock);
+      }
+    }
+    comprado->to_buy=op;
+    comprado->producto=*iteration;   
+    push_back(cart, comprado);
+    comprado = first(cart);
+    while(iteration != NULL) {
+      printf("%s %d\n",comprado->producto.name,comprado->to_buy);
+      iteration=next(cart);
+    }
+    return cart;    
 }
 
 void pop_cart() {}
 
-void show_cart() {}
+void show_cart(List *cart) {
+    product *iterator;
+    purchase *comprado;
+    iterator=first(cart);
+    while(iterator != NULL){
+      printf("%s ", iterator->name);
+      printf("%s ", iterator->brand);
+      printf("%s ", iterator->type);
+      if(iterator->to_buy > 1){
+        printf("");
+      }
+    }
+}
 
 void show_recom() {}
 
-void complete_purchase() {}
+void complete_purchase() {
+    int rut;
+    int acum;
+    printf("Ingrese su rut:");
+    scanf("%d", &rut);
+}
 
 void show_points() {}
 
@@ -325,32 +378,39 @@ void faq() {
     printf("  En este menú, las siguientes opciones poseen sus propias funciones (submenús):\n\n");
     printf("  1. Buscar:\n");
     printf("    a. Buscar por producto.\n");
-    printf("    \n");
-    printf("    \n");
-    printf("    \n");
-    printf("    \n");
-    printf("    \n");
-    printf("    \n\n");
+    printf("    b. Buscar por tipo de producto.\n");
+    printf("    c. Buscar por marca.\n");
+    printf("    d. Orden por precio  (ascendente).\n");
+    printf("    e. Orden por marca.\n");
+    printf("    f. Orden por tipo.\n");
+    printf("    g. Orden alfabético.\n\n");
+    printf("    h. Agregar al carro.\n\n");
     printf("  2. Mostrar carro:\n");
-    printf("    \n\n");
+    printf("    a. Quitar del carro.\n\n");
     printf("  6. Soporte de ayuda:\n");
-    printf("    \n\n");
-    printf("    \n\n\n");
-    printf("-¿Que limitaciones posee la aplicacion?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
+    printf("    a. Tutorial\n\n");
+    printf("    b. Preguntas frecuentes.\n\n\n");
+    printf("  -¿Que limitaciones posee la aplicacion?\n\n");
+    printf("  -Necesita de conexión a Internet para poder funcionar.\n");
+    printf("  -No posee imágenes digitales (y junto con esto la publicidad).\n");
+    printf("  -La interacción es únicamente a través del teclado, a diferencia de otras aplicaciones con interacción táctil.\n");
+    printf("  -No se pueden realizar búsquedas de más de una palabra.\n\n\n");
     printf("-¿Como funcionan los puntos acumulados?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
+    printf("Cada vez que se realiza una compra se le pregunta al usuario si desea acumular puntos, al acceder se le solicita su rut.\n\n");
+    printf("Estos puntos corresponden al total de la compra dividido en 100 y como indica su nombre, se van acumulando (en cada compra).\n\n\n");
     printf("-¿Cómo se seleccionan los productos recomendados?\n\n");
     printf("\n\n");
     printf("\n\n\n");
     printf("-¿Como se realiza una compra?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
+    printf("  1. Seleccione la  opción 1 para buscar los productos.\n");
+    printf("  2. Luego escoja el metodo de busqueda (por producto, por tipo de producto o por marca).\n");
+    printf("  3. Indique el orden en el que desea que sean desplegados los productos (por precio, por marca, por tipo u orden alfabetico).\n");
+    printf("  4. Ahora aparecerá una lista con productos que usted busco y en caso de querer agregar uno de estos al carro, debera ingresar 1 y luego el numero del producto deseado (al igual que con las opciones)\n");
+    printf("  5. Si desea seguir buscando presione 2, sino presione 1\n");
+    printf("  6. Al presionar 1 en el paso anterior, se volvera al menu principal, donde se seleccionara la opcion 4 para finalizar la compra\n\n\n");
     printf("-¿Como puedo acumular puntos?\n\n");
-    printf("\n\n");
-    printf("\n\n\n");
+    printf("Al realizar una compra se le preguntara si desea acumular puntos, para  aceptar debera presionar 1.\n\n");
+    printf("Luego se lo solicitara su rut, una vez ingresado le aparecera un mensaje diciendo Operacion exitosa.\n\n\n");
     printf("Ingrese 1 para terminar el tutorial\n\n");
     scanf("%d", &op);
     if (op == 1) return;

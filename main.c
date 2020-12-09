@@ -95,9 +95,10 @@ int main (void) {
                   az_sort(L, tmc);
               }
               printf("Escriba 1 si desea agregar algun producto al carro\n");
-              scanf("%d", &op);
-              if (op == 1) {
-                  L=push_cart();
+              scanf("%d", &op2);
+              if (op2 == 1) {
+                  if(op==1) cart=push_cart(cart,tm);
+                  else cart=push_cart(cart,tmc);
               }
               printf("¿Desea seguir buscando?\n");
               printf("1. Sí\n");

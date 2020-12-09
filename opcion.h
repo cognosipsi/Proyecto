@@ -27,7 +27,7 @@ void type_sort(List *, TreeMap *);
 
 void az_sort(List *, TreeMap *);
 
-L *push_cart(*List);
+List *push_cart(List*,TreeMap*);
 
 void pop_cart();
 
