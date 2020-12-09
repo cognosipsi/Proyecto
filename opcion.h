@@ -11,23 +11,23 @@
 #include "hashmap.h"
 #include "treemap.h"
 
-void import(HashMap *);
+void import(HashMap *, HashMap *, HashMap *);
 
-void search_product();
+List *search_product(HashMap *, List *);
 
-void search_type();
+List *search_type(HashMap *, List *L);
 
-void search_brand();
+List *search_brand(HashMap *, List *L);
 
-void price_sort();
+void price_sort(List *, TreeMap *);
 
-void brand_sort();
+void brand_sort(List *, TreeMap *);
 
-void type_sort();
+void type_sort(List *, TreeMap *);
 
-void az_sort();
+void az_sort(List *, TreeMap *);
 
-void push_cart();
+L *push_cart(*List);
 
 void pop_cart();
 
